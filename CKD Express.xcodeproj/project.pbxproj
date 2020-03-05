@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056DF61E24030F63002703FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61D24030F63002703FE /* AppDelegate.swift */; };
+		056DF62024030F63002703FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61F24030F63002703FE /* SceneDelegate.swift */; };
+		056DF62524030F63002703FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62324030F63002703FE /* Main.storyboard */; };
+		056DF62724030F6D002703FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62624030F6D002703FE /* Assets.xcassets */; };
+		056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62824030F6D002703FE /* LaunchScreen.storyboard */; };
+		056DF63524030F6D002703FE /* CKD_ExpressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF63424030F6D002703FE /* CKD_ExpressTests.swift */; };
+		056DF64024030F6D002703FE /* CKD_ExpressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF63F24030F6D002703FE /* CKD_ExpressUITests.swift */; };
+		056DF64F240310F3002703FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF64E240310F3002703FE /* User.swift */; };
+		056DF651240C6F94002703FE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF650240C6F94002703FE /* Patient.swift */; };
+		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
+		056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF6C424108F6A002703FE /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		056DF63124030F6D002703FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056DF61224030F63002703FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056DF61924030F63002703FE;
+			remoteInfo = "CKD Express";
+		};
+		056DF63C24030F6D002703FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056DF61224030F63002703FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056DF61924030F63002703FE;
+			remoteInfo = "CKD Express";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056DF61A24030F63002703FE /* CKD Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CKD Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056DF61D24030F63002703FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		056DF61F24030F63002703FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		056DF62424030F63002703FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		056DF62624030F6D002703FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		056DF62924030F6D002703FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		056DF62B24030F6D002703FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056DF63024030F6D002703FE /* CKD ExpressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CKD ExpressTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056DF63424030F6D002703FE /* CKD_ExpressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKD_ExpressTests.swift; sourceTree = "<group>"; };
+		056DF63624030F6D002703FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056DF63B24030F6D002703FE /* CKD ExpressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CKD ExpressUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056DF63F24030F6D002703FE /* CKD_ExpressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKD_ExpressUITests.swift; sourceTree = "<group>"; };
+		056DF64124030F6D002703FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056DF64E240310F3002703FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		056DF650240C6F94002703FE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
+		056DF6C424108F6A002703FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		056DF61724030F63002703FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF62D24030F6D002703FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF63824030F6D002703FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056DF61124030F63002703FE = {
+			isa = PBXGroup;
+			children = (
+				056DF61C24030F63002703FE /* CKD Express */,
+				056DF63324030F6D002703FE /* CKD ExpressTests */,
+				056DF63E24030F6D002703FE /* CKD ExpressUITests */,
+				056DF61B24030F63002703FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		056DF61B24030F63002703FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				056DF61A24030F63002703FE /* CKD Express.app */,
+				056DF63024030F6D002703FE /* CKD ExpressTests.xctest */,
+				056DF63B24030F6D002703FE /* CKD ExpressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		056DF61C24030F63002703FE /* CKD Express */ = {
+			isa = PBXGroup;
+			children = (
+				056DF6C324108859002703FE /* ViewControllers */,
+				056DF64D240310AD002703FE /* ModelComponents */,
+				056DF61D24030F63002703FE /* AppDelegate.swift */,
+				056DF61F24030F63002703FE /* SceneDelegate.swift */,
+				056DF62324030F63002703FE /* Main.storyboard */,
+				056DF62624030F6D002703FE /* Assets.xcassets */,
+				056DF62824030F6D002703FE /* LaunchScreen.storyboard */,
+				056DF62B24030F6D002703FE /* Info.plist */,
+			);
+			path = "CKD Express";
+			sourceTree = "<group>";
+		};
+		056DF63324030F6D002703FE /* CKD ExpressTests */ = {
+			isa = PBXGroup;
+			children = (
+				056DF63424030F6D002703FE /* CKD_ExpressTests.swift */,
+				056DF63624030F6D002703FE /* Info.plist */,
+			);
+			path = "CKD ExpressTests";
+			sourceTree = "<group>";
+		};
+		056DF63E24030F6D002703FE /* CKD ExpressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				056DF63F24030F6D002703FE /* CKD_ExpressUITests.swift */,
+				056DF64124030F6D002703FE /* Info.plist */,
+			);
+			path = "CKD ExpressUITests";
+			sourceTree = "<group>";
+		};
+		056DF64D240310AD002703FE /* ModelComponents */ = {
+			isa = PBXGroup;
+			children = (
+				056DF64E240310F3002703FE /* User.swift */,
+				056DF650240C6F94002703FE /* Patient.swift */,
+				056DF652240C6FB4002703FE /* GFRScore.swift */,
+			);
+			path = ModelComponents;
+			sourceTree = "<group>";
+		};
+		056DF6C324108859002703FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				056DF6C424108F6A002703FE /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		056DF61924030F63002703FE /* CKD Express */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056DF64424030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD Express" */;
+			buildPhases = (
+				056DF61624030F63002703FE /* Sources */,
+				056DF61724030F63002703FE /* Frameworks */,
+				056DF61824030F63002703FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CKD Express";
+			productName = "CKD Express";
+			productReference = 056DF61A24030F63002703FE /* CKD Express.app */;
+			productType = "com.apple.product-type.application";
+		};
+		056DF62F24030F6D002703FE /* CKD ExpressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056DF64724030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD ExpressTests" */;
+			buildPhases = (
+				056DF62C24030F6D002703FE /* Sources */,
+				056DF62D24030F6D002703FE /* Frameworks */,
+				056DF62E24030F6D002703FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056DF63224030F6D002703FE /* PBXTargetDependency */,
+			);
+			name = "CKD ExpressTests";
+			productName = "CKD ExpressTests";
+			productReference = 056DF63024030F6D002703FE /* CKD ExpressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		056DF63A24030F6D002703FE /* CKD ExpressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056DF64A24030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD ExpressUITests" */;
+			buildPhases = (
+				056DF63724030F6D002703FE /* Sources */,
+				056DF63824030F6D002703FE /* Frameworks */,
+				056DF63924030F6D002703FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056DF63D24030F6D002703FE /* PBXTargetDependency */,
+			);
+			name = "CKD ExpressUITests";
+			productName = "CKD ExpressUITests";
+			productReference = 056DF63B24030F6D002703FE /* CKD ExpressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		056DF61224030F63002703FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jordan Genovese";
+				TargetAttributes = {
+					056DF61924030F63002703FE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					056DF62F24030F6D002703FE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 056DF61924030F63002703FE;
+					};
+					056DF63A24030F6D002703FE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 056DF61924030F63002703FE;
+					};
+				};
+			};
+			buildConfigurationList = 056DF61524030F63002703FE /* Build configuration list for PBXProject "CKD Express" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 056DF61124030F63002703FE;
+			productRefGroup = 056DF61B24030F63002703FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				056DF61924030F63002703FE /* CKD Express */,
+				056DF62F24030F6D002703FE /* CKD ExpressTests */,
+				056DF63A24030F6D002703FE /* CKD ExpressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		056DF61824030F63002703FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */,
+				056DF62724030F6D002703FE /* Assets.xcassets in Resources */,
+				056DF62524030F63002703FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF62E24030F6D002703FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF63924030F6D002703FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056DF61624030F63002703FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056DF64F240310F3002703FE /* User.swift in Sources */,
+				056DF653240C6FB4002703FE /* GFRScore.swift in Sources */,
+				056DF61E24030F63002703FE /* AppDelegate.swift in Sources */,
+				056DF62024030F63002703FE /* SceneDelegate.swift in Sources */,
+				056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */,
+				056DF651240C6F94002703FE /* Patient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF62C24030F6D002703FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056DF63524030F6D002703FE /* CKD_ExpressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DF63724030F6D002703FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056DF64024030F6D002703FE /* CKD_ExpressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		056DF63224030F6D002703FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056DF61924030F63002703FE /* CKD Express */;
+			targetProxy = 056DF63124030F6D002703FE /* PBXContainerItemProxy */;
+		};
+		056DF63D24030F6D002703FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056DF61924030F63002703FE /* CKD Express */;
+			targetProxy = 056DF63C24030F6D002703FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		056DF62324030F63002703FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056DF62424030F63002703FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		056DF62824030F6D002703FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056DF62924030F6D002703FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		056DF64224030F6D002703FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		056DF64324030F6D002703FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		056DF64524030F6D002703FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD Express/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-Express";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		056DF64624030F6D002703FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD Express/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-Express";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		056DF64824030F6D002703FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD ExpressTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-ExpressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKD Express.app/CKD Express";
+			};
+			name = Debug;
+		};
+		056DF64924030F6D002703FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD ExpressTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-ExpressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKD Express.app/CKD Express";
+			};
+			name = Release;
+		};
+		056DF64B24030F6D002703FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD ExpressUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-ExpressUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CKD Express";
+			};
+			name = Debug;
+		};
+		056DF64C24030F6D002703FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CKD ExpressUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cs295ckdexpress.CKD-ExpressUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CKD Express";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		056DF61524030F63002703FE /* Build configuration list for PBXProject "CKD Express" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056DF64224030F6D002703FE /* Debug */,
+				056DF64324030F6D002703FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056DF64424030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD Express" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056DF64524030F6D002703FE /* Debug */,
+				056DF64624030F6D002703FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056DF64724030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD ExpressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056DF64824030F6D002703FE /* Debug */,
+				056DF64924030F6D002703FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056DF64A24030F6D002703FE /* Build configuration list for PBXNativeTarget "CKD ExpressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056DF64B24030F6D002703FE /* Debug */,
+				056DF64C24030F6D002703FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 056DF61224030F63002703FE /* Project object */;
+}
