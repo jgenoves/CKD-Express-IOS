@@ -20,4 +20,6 @@ public class GFRScore {
         locationRecorded = newLocation
     }
     
+    
+    
 }
