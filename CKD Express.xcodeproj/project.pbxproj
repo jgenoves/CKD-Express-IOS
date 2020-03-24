@@ -19,6 +19,7 @@
 		056DF651240C6F94002703FE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF650240C6F94002703FE /* Patient.swift */; };
 		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
 		056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF6C424108F6A002703FE /* HomeViewController.swift */; };
+		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B8B8B624293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
 		05B8B8B724293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
 		05B8B8B824293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
@@ -64,6 +65,7 @@
 		056DF650240C6F94002703FE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
 		056DF6C424108F6A002703FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B8B8BA24294159008A2446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E0CEBC3CBC194291E5BB1EA /* Pods-CKD ExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD ExpressTests.release.xcconfig"; path = "Target Support Files/Pods-CKD ExpressTests/Pods-CKD ExpressTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		056DF61C24030F63002703FE /* CKD Express */ = {
 			isa = PBXGroup;
 			children = (
+				05B6989D242A9ECE0099E0DD /* Helpers */,
 				05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */,
 				056DF6C324108859002703FE /* ViewControllers */,
 				056DF64D240310AD002703FE /* ModelComponents */,
@@ -178,6 +181,14 @@
 				056DF6C424108F6A002703FE /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		05B6989D242A9ECE0099E0DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05B6989E242A9F030099E0DD /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		05B8B8B924294135008A2446 /* LoginViewControllers */ = {
@@ -459,6 +470,7 @@
 				056DF61E24030F63002703FE /* AppDelegate.swift in Sources */,
 				056DF62024030F63002703FE /* SceneDelegate.swift in Sources */,
 				056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */,
+				05B6989F242A9F030099E0DD /* Utilities.swift in Sources */,
 				056DF651240C6F94002703FE /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
