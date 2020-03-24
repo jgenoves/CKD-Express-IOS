@@ -27,28 +27,44 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginToApplication(_ sender: UIButton) {
         
-        let email = self.emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        let password = self.passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        print("email: \(email), password: \(password)")
-        
-        if(validateFields(email: email, password: password)){
-            let email = self.emailField.text
-            let password = self.passwordField.text
-            Auth.auth().signIn(withEmail: email!, password: password!) {
-                (user, err) in
-                
-                if let err = err{
-                    print("Error signing in: \(err)")
-                } else{
-                    print("Sign-in Success: \(user)" )
-                }
-              
-            }
+        if(validateFields(email: self.emailField.text, password: self.passwordField.text)){
+            let email = self.emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
+            let password = self.passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            signInUser(email: email, password: password)
         }
         
+    }
+    
+    func signInUser(email e: String, password p: String) {
+        Auth.auth().signIn(withEmail: e, password: p) {
+            (result, err) in
+            
+            if let err = err{
+                print("Error signing in: \(err)")
+            } else {
+               print("Success signing in")
+                self.delegate.db!.collection("USERS").whereField("authID", isEqualTo: result!.user.uid).getDocuments() {
+                    
+                    (querySnapshot, err) in
+                    
+                    if let err = err {
+                        self.errorLabel.text = "Error connecting"
+                        print("\(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            let userData = document.data()
+                            print("\(userData)")
+                        }
+                    }
+                    
+                    
+                }
+                
+            }
+          
+        }
     }
         
       
@@ -56,17 +72,30 @@ class LoginViewController: UIViewController {
         self.errorLabel.alpha = 0
     }
     
-    func validateFields(email email: String, password password: String) -> Bool {
+    func validateFields(email e: String?, password p: String?) -> Bool {
         
         resetLabels()
         
-        let emailValid = Utilities.validateEmail(email)
-        let passwordValid = Utilities.validatePassword(password)
+        var emailValid: Bool
+        var passwordValid: Bool
+        
+        if e != nil{
+            emailValid = Utilities.validateEmail(e!)
+        } else {
+            emailValid = false
+        }
+        
+        if p != nil{
+            passwordValid = Utilities.validatePassword(p!)
+        } else {
+            passwordValid = false
+        }
         
         if(!emailValid || !passwordValid){
             displayErrors(emailStatus: emailValid, passwordStatus: passwordValid)
             return false
         }
+            
         else {
             return true
         }
