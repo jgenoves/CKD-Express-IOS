@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class User {
+public class User : NSObject {
     
     var id: Int?
     var email: String?
@@ -23,6 +23,7 @@ public class User {
         password = userPassword
         firstName = userFirstName
         lastName = userLastName
+        super.init()
     }
     
     
