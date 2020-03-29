@@ -10,28 +10,44 @@ import Foundation
 
 public class Patient: User {
     
-    var ckdStage: String?
-    var gfrScores: Array<GFRScore>?
-    var checkupNeeded: Bool?
-    var nephVisitNeeded: Bool?
+    var ckdStage: String
+    var gfrScores: Array<GFRScore>
+    var checkupNeeded: Bool
+    var nephVisitNeeded: Bool
     
     
+    init(firstName pFirstName: String,
+         lastName pLastName: String,
+         ckdStage pckdStage: String,
+         gfrScores pScores: Array<GFRScore>,
+         checkupNeeded pCheckup: Bool,
+         nepthVisitNeeded pNeph: Bool){
+        
+        ckdStage = pckdStage
+        gfrScores = pScores
+        checkupNeeded = pCheckup
+        nephVisitNeeded = pNeph
+        
+        super.init(firstName: pFirstName, lastName: pLastName)
+    }
+    
+
     
     //Getters
     
-    func getCkdStage() -> String?{
+    func getCkdStage() -> String{
         return ckdStage
     }
     
-    func getGfrScores() -> Array<GFRScore>? {
+    func getGfrScores() -> Array<GFRScore> {
         return gfrScores
     }
     
-    func needCheckup() -> Bool? {
+    func needCheckup() -> Bool {
         return checkupNeeded
     }
     
-    func needNephVisit() -> Bool? {
+    func needNephVisit() -> Bool {
         return nephVisitNeeded
     }
     
@@ -39,19 +55,19 @@ public class Patient: User {
     
     //Setters
     
-    func setCkdStage(setCkdStageAs newCkdStage: String?) {
+    func setCkdStage(setCkdStageAs newCkdStage: String) {
         ckdStage = newCkdStage
     }
     
-    func setGfrScores(setGfrScoresAs newGfrScores: Array<GFRScore>?) {
+    func setGfrScores(setGfrScoresAs newGfrScores: Array<GFRScore>) {
         gfrScores = newGfrScores
     }
     
-    func setCheckupNeeded(setCheckupNeededAs checkupStatus: Bool?) {
+    func setCheckupNeeded(setCheckupNeededAs checkupStatus: Bool) {
         checkupNeeded = checkupStatus
     }
     
-    func setNephVisitNeeded(setNephVisitNeededAs nephVisitStatus: Bool?) {
+    func setNephVisitNeeded(setNephVisitNeededAs nephVisitStatus: Bool) {
         nephVisitNeeded = nephVisitStatus
     }
     

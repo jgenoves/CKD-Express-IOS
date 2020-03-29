@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeViewController-->
+        <!--PatientHomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="HomeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientHomeViewController" id="BYZ-38-t0r" customClass="PatientHomeViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="loginToApplication:" destination="4qb-X5-n5d" eventType="touchUpInside" id="x33-5M-zOl"/>
+                                    <action selector="loginButtonAction:" destination="4qb-X5-n5d" eventType="touchUpInside" id="7ou-zj-Ofh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAg-yU-2sw">
@@ -65,7 +65,7 @@
                     <connections>
                         <outlet property="emailField" destination="aKk-5Q-0MG" id="8iP-ZM-lm1"/>
                         <outlet property="errorLabel" destination="sAg-yU-2sw" id="jrp-s7-25c"/>
-                        <outlet property="loginButton" destination="hxg-54-sYD" id="xxb-Yt-Sak"/>
+                        <outlet property="loginButton" destination="hxg-54-sYD" id="XYa-et-uCO"/>
                         <outlet property="passwordField" destination="8yW-l2-eAf" id="Hnq-wg-jfE"/>
                     </connections>
                 </viewController>

@@ -7,17 +7,23 @@
 //
 
 import Foundation
+import Firebase
 
-public class GFRScore {
+public class GFRScore : NSObject {
     
-    var score: Double?
-    var dateRecorded: Date?
-    var locationRecorded: String?
+    var id: Int
+    var score: Double
+    var dateRecorded: Timestamp
+    var locationRecorded: String
     
-    init(score newScore: Double?, date newDate: Date?, location newLocation: String?){
+    init(id newId: Int, score newScore: Double, date newDate: Timestamp, location newLocation: String) {
+        
+        id = newId
         score = newScore
         dateRecorded = newDate
         locationRecorded = newLocation
+        
+        super.init()
     }
     
     

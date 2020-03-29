@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		037C577261B5B77C0EBF928E /* Pods_CKD_Express_CKD_ExpressUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434CB0473373E21EED340AAA /* Pods_CKD_Express_CKD_ExpressUITests.framework */; };
+		0504E6A1243126C8002E597F /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0504E6A0243126C8002E597F /* PatientHomeViewController.swift */; };
 		056DF61E24030F63002703FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61D24030F63002703FE /* AppDelegate.swift */; };
 		056DF62024030F63002703FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61F24030F63002703FE /* SceneDelegate.swift */; };
 		056DF62524030F63002703FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62324030F63002703FE /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		056DF64F240310F3002703FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF64E240310F3002703FE /* User.swift */; };
 		056DF651240C6F94002703FE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF650240C6F94002703FE /* Patient.swift */; };
 		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
-		056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF6C424108F6A002703FE /* HomeViewController.swift */; };
 		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B8B8B624293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
 		05B8B8B724293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0504E6A0243126C8002E597F /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
 		056DF61A24030F63002703FE /* CKD Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CKD Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		056DF61D24030F63002703FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		056DF61F24030F63002703FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		056DF64E240310F3002703FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		056DF650240C6F94002703FE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
-		056DF6C424108F6A002703FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B8B8BA24294159008A2446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0504E69F24312698002E597F /* PatientHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0504E6A0243126C8002E597F /* PatientHomeViewController.swift */,
+			);
+			path = PatientHomeView;
+			sourceTree = "<group>";
+		};
+		0504E6A524312728002E597F /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				05B8B8BA24294159008A2446 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 		056DF61124030F63002703FE = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +193,8 @@
 		056DF6C324108859002703FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				05B8B8B924294135008A2446 /* LoginViewControllers */,
-				056DF6C424108F6A002703FE /* HomeViewController.swift */,
+				0504E6A524312728002E597F /* LoginView */,
+				0504E69F24312698002E597F /* PatientHomeView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,14 +205,6 @@
 				05B6989E242A9F030099E0DD /* Utilities.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		05B8B8B924294135008A2446 /* LoginViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				05B8B8BA24294159008A2446 /* LoginViewController.swift */,
-			);
-			path = LoginViewControllers;
 			sourceTree = "<group>";
 		};
 		3EACCFEFCD74746DF33F551B /* Pods */ = {
@@ -469,9 +477,9 @@
 				056DF653240C6FB4002703FE /* GFRScore.swift in Sources */,
 				056DF61E24030F63002703FE /* AppDelegate.swift in Sources */,
 				056DF62024030F63002703FE /* SceneDelegate.swift in Sources */,
-				056DF6C524108F6A002703FE /* HomeViewController.swift in Sources */,
 				05B6989F242A9F030099E0DD /* Utilities.swift in Sources */,
 				056DF651240C6F94002703FE /* Patient.swift in Sources */,
+				0504E6A1243126C8002E597F /* PatientHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

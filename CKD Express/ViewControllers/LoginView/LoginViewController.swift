@@ -25,47 +25,72 @@ class LoginViewController: UIViewController {
         setupElements()
     }
     
-    @IBAction func loginToApplication(_ sender: UIButton) {
+    @IBAction func loginButtonAction(_ sender: UIButton) {
         
+        //Validate fields
         if(validateFields(email: self.emailField.text, password: self.passwordField.text)){
+            
+            //Clean input
             let email = self.emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             let password = self.passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
+            //Send input to signIn function
             signInUser(email: email, password: password)
         }
         
     }
     
     func signInUser(email e: String, password p: String) {
+        
+        //Sign in user using email and password passed in after validation
         Auth.auth().signIn(withEmail: e, password: p) {
             (result, err) in
             
-            if let err = err{
-                print("Error signing in: \(err)")
+            if let err = err {
+                print("Error Logging in \(err)")
             } else {
-               print("Success signing in")
-                self.delegate.db!.collection("USERS").whereField("authID", isEqualTo: result!.user.uid).getDocuments() {
+                
+                print("Login Success")
+                //Store the google auth user id
+                let uid = result!.user.uid
+                
+                //Query the database to get the document containing the users data
+                self.delegate.db!.collection("USERS").whereField("authID", isEqualTo: uid).getDocuments() {
                     
                     (querySnapshot, err) in
                     
                     if let err = err {
-                        self.errorLabel.text = "Error connecting"
-                        print("\(err)")
+                        print("Error finding user in database \(err)")
                     } else {
+                        
                         for document in querySnapshot!.documents {
+                            
                             let userData = document.data()
-                            print("\(userData)")
+                            
+                            self.delegate.activePatientUser = Utilities.loadPatientDataFromDB(data: userData)
+                            
+                            print(self.delegate.activePatientUser.getGfrScores())
+                            
+                            
+                            //Transition to appropriate view based on userType, either patient or admin
+                            
+                        
+                            
                         }
                     }
-                    
-                    
                 }
-                
             }
-          
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
         
       
     func setupElements() {

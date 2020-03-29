@@ -10,67 +10,37 @@ import Foundation
 
 public class User : NSObject {
     
-    var id: Int?
-    var email: String?
-    var password: String?
-    var firstName: String?
-    var lastName: String?
+    public var firstName: String
+    public var lastName: String
     
     
-    init (id userId: Int?, email userEmail: String?, password userPassword: String?, firstName userFirstName: String?, lastName userLastName: String?){
-        id = userId
-        email = userEmail
-        password = userPassword
+    init (firstName userFirstName: String, lastName userLastName: String){
         firstName = userFirstName
         lastName = userLastName
+
         super.init()
     }
     
     
     
-    //Getters
     
-    func getId() -> Int? {
-        return id
-    }
-    
-    func getEmail() -> String? {
-        return email
-    }
-    
-    func getPassword() -> String? {
-        return password
-    
-    }
-    
-    func getFirstName() -> String? {
+    func getFirstName() -> String {
         return firstName
     }
     
-    func getLastName() -> String? {
+    func getLastName() -> String {
         return lastName
     }
     
     
     //Setters
     
-    func setId(setIdAs newId: Int?){
-        id = newId
-    }
     
-    func setEmail(setEmailAs newEmail: String?){
-        email = newEmail
-    }
-    
-    func setPassword(setPasswordAs newPassword: String?){
-        password = newPassword
-    }
-    
-    func setFirstName(setFirstNameAs newFirstName: String?){
+    func setFirstName(setFirstNameAs newFirstName: String){
         firstName = newFirstName
     }
     
-    func setLastName(setLastNameAs newLastName: String?){
+    func setLastName(setLastNameAs newLastName: String){
         lastName = newLastName
     }
 }
