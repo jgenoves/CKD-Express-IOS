@@ -21,6 +21,8 @@
 		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
 		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */; };
+		05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */; };
+		05B877972446336E00B87CF6 /* PatientScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877962446336E00B87CF6 /* PatientScoresViewController.swift */; };
 		05B8B8B624293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
 		05B8B8B724293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
 		05B8B8B824293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
@@ -68,6 +70,8 @@
 		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
 		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPatientTabBarController.swift; sourceTree = "<group>"; };
+		05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNotificationsViewController.swift; sourceTree = "<group>"; };
+		05B877962446336E00B87CF6 /* PatientScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScoresViewController.swift; sourceTree = "<group>"; };
 		05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B8B8BA24294159008A2446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E0CEBC3CBC194291E5BB1EA /* Pods-CKD ExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD ExpressTests.release.xcconfig"; path = "Target Support Files/Pods-CKD ExpressTests/Pods-CKD ExpressTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 		056DF6C324108859002703FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				05B877932446332B00B87CF6 /* PatientNotificationsView */,
+				05B877922446331B00B87CF6 /* PatientScoresView */,
 				05B8778E244628B900B87CF6 /* UITabBar */,
 				0504E6A524312728002E597F /* LoginView */,
 				0504E69F24312698002E597F /* PatientHomeView */,
@@ -216,6 +222,22 @@
 				05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */,
 			);
 			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		05B877922446331B00B87CF6 /* PatientScoresView */ = {
+			isa = PBXGroup;
+			children = (
+				05B877962446336E00B87CF6 /* PatientScoresViewController.swift */,
+			);
+			path = PatientScoresView;
+			sourceTree = "<group>";
+		};
+		05B877932446332B00B87CF6 /* PatientNotificationsView */ = {
+			isa = PBXGroup;
+			children = (
+				05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */,
+			);
+			path = PatientNotificationsView;
 			sourceTree = "<group>";
 		};
 		3EACCFEFCD74746DF33F551B /* Pods */ = {
@@ -492,6 +514,8 @@
 				056DF651240C6F94002703FE /* Patient.swift in Sources */,
 				05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */,
 				0504E6A1243126C8002E597F /* PatientHomeViewController.swift in Sources */,
+				05B877972446336E00B87CF6 /* PatientScoresViewController.swift in Sources */,
+				05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

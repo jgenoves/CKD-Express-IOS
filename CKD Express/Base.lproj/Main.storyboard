@@ -58,21 +58,23 @@
             </objects>
             <point key="canvasLocation" x="388" y="-159"/>
         </scene>
-        <!--Item 2-->
+        <!--Patient Scores-->
         <scene sceneID="lIc-OW-NVT">
             <objects>
-                <viewController id="QcF-ry-X0l" sceneMemberID="viewController">
+                <viewController title="Patient Scores" id="QcF-ry-X0l" customClass="PatientScoresViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KL3-zy-9e8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7iM-1L-8Am"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4w0-JA-yu0"/>
+                    <tabBarItem key="tabBarItem" title="Scores" image="list.bullet" catalog="system" selectedImage="list.bullet" id="4w0-JA-yu0">
+                        <color key="badgeColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxx-hw-dBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="695"/>
+            <point key="canvasLocation" x="1119" y="721"/>
         </scene>
         <!--PatientHomeView-->
         <scene sceneID="SwT-ON-Fgc">
@@ -84,29 +86,56 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gpQ-3S-a1b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Cbp-Rs-Yrb"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="Cbp-Rs-Yrb">
+                        <color key="badgeColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asJ-zN-Hkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="705"/>
+            <point key="canvasLocation" x="431" y="721"/>
         </scene>
-        <!--Patient Tab Bar Controller-->
+        <!--UIPatientTabBarController-->
         <scene sceneID="KCj-2P-fW1">
             <objects>
-                <tabBarController storyboardIdentifier="UIPatientTabBarVC" id="tsX-bc-hp5" customClass="UIPatientTabBarController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UIPatientTabBarVC" title="UIPatientTabBarController" id="tsX-bc-hp5" customClass="UIPatientTabBarController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofD-bx-r9Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Q3w-xZ-UQw" kind="relationship" relationship="viewControllers" id="1x7-uB-A54"/>
                         <segue destination="QcF-ry-X0l" kind="relationship" relationship="viewControllers" id="kjM-fl-ISB"/>
+                        <segue destination="ySk-7V-YWc" kind="relationship" relationship="viewControllers" id="GGK-LZ-4EA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcK-22-z2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-158"/>
+            <point key="canvasLocation" x="1150" y="-160"/>
+        </scene>
+        <!--Patient Notifications-->
+        <scene sceneID="zk7-8x-2CT">
+            <objects>
+                <viewController title="Patient Notifications" id="ySk-7V-YWc" customClass="PatientNotificationsViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B6p-n6-rtL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QIW-ts-EMQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="exclamationmark.circle" catalog="system" selectedImage="exclamationmark.circle" id="nhK-RK-Pi5">
+                        <color key="badgeColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-ZU-jie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850" y="721"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
+    </resources>
 </document>
