@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PatientScoresViewController : UIViewController {
+class PatientScoresViewController : UITableViewController {
     
     
 }
