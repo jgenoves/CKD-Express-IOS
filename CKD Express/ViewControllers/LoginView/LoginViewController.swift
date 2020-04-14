@@ -41,6 +41,15 @@ class LoginViewController: UIViewController {
         
     }
     
+    func transitionToPatientHome() {
+        let patientHomeVC = storyboard?.instantiateViewController(identifier: "UIPatientTabBarVC") as? UIPatientTabBarController
+        
+        view.window?.rootViewController = patientHomeVC
+        view.window?.makeKeyAndVisible()
+        
+        
+    }
+    
     func signInUser(email e: String, password p: String) {
         
         //Sign in user using email and password passed in after validation
@@ -78,6 +87,8 @@ class LoginViewController: UIViewController {
                         
                             
                         }
+                        
+                        self.transitionToPatientHome()
                     }
                 }
             }
