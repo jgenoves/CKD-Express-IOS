@@ -79,6 +79,8 @@ class Utilities {
     
     
     
+    
+    
     static func styleEmailAndPasswordInput(email email: UITextField, password password: UITextField){
         
         email.text = ""

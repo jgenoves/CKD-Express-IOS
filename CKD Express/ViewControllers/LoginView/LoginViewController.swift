@@ -24,6 +24,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupElements()
+        
+        
+        
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
@@ -42,14 +45,8 @@ class LoginViewController: UIViewController {
         
     }
     
-    func transitionToPatientHome() {
-        let patientHomeVC = storyboard?.instantiateViewController(identifier: "UIPatientTabBarVC") as? UIPatientTabBarController
-        
-        view.window?.rootViewController = patientHomeVC
-        view.window?.makeKeyAndVisible()
-        
-        
-    }
+    
+    
     
     func signInUser(email e: String, password p: String) {
         
@@ -93,15 +90,21 @@ class LoginViewController: UIViewController {
                         self.transitionToPatientHome()
                     }
                 }
+                
+                
             }
         }
     }
     
     
-    
-    
-    
-    
+    func transitionToPatientHome() {
+        let patientHomeVC = storyboard?.instantiateViewController(identifier: "UIPatientTabBarVC") as? UIPatientTabBarController
+        
+        view.window?.rootViewController = patientHomeVC
+        view.window?.makeKeyAndVisible()
+        
+        
+    }
     
     
         
