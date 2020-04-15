@@ -100,5 +100,16 @@ class Utilities {
     }
     
     
+    static func styleHollowButton(_ button: UIButton){
+        
+        button.layer.cornerRadius = 25.0
+        button.layer.borderColor = self.app_blueColor.cgColor
+        button.layer.borderWidth = 2
+        button.alpha = 0.5
+        button.tintColor = self.app_blueColor
+        button.backgroundColor = UIColor.white
+    }
+    
+    
 
 }

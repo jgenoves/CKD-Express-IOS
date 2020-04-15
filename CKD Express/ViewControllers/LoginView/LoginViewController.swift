@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -10,7 +10,7 @@
         <!--LoginView-->
         <scene sceneID="FxE-rX-X34">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" title="LoginView" id="4qb-X5-n5d" customClass="LoginViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginPageVC" title="LoginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4qb-X5-n5d" customClass="LoginViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZgW-l9-hZf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,8 +114,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="Q3w-xZ-UQw" kind="relationship" relationship="viewControllers" id="1x7-uB-A54"/>
-                        <segue destination="ySk-7V-YWc" kind="relationship" relationship="viewControllers" id="GGK-LZ-4EA"/>
                         <segue destination="ujc-W0-nA0" kind="relationship" relationship="viewControllers" id="AIg-pW-QwF"/>
+                        <segue destination="ySk-7V-YWc" kind="relationship" relationship="viewControllers" id="GGK-LZ-4EA"/>
+                        <segue destination="Npk-FS-4Ke" kind="relationship" relationship="viewControllers" id="A9G-fP-MTs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcK-22-z2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,22 +170,22 @@
             </objects>
             <point key="canvasLocation" x="1150" y="721"/>
         </scene>
-        <!--Pre Login View Controler-->
+        <!--PreLoginView-->
         <scene sceneID="J6r-bE-7D4">
             <objects>
-                <viewController storyboardIdentifier="PreLoginVC" id="HII-wg-0FP" customClass="PreLoginViewControler" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PreLoginVC" title="PreLoginView" id="HII-wg-0FP" customClass="PreLoginViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxc-Qs-mWh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="HoK-Di-oOj">
-                                <rect key="frame" x="20" y="217" width="374" height="463"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-r1-gU2">
+                                <rect key="frame" x="24" y="219" width="366" height="458"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HoK-Di-oOj" firstAttribute="centerX" secondItem="dxc-Qs-mWh" secondAttribute="centerX" id="QxV-cX-CIV"/>
-                            <constraint firstItem="HoK-Di-oOj" firstAttribute="centerY" secondItem="dxc-Qs-mWh" secondAttribute="centerY" id="fU9-NW-1Qq"/>
+                            <constraint firstItem="DR7-r1-gU2" firstAttribute="centerX" secondItem="dxc-Qs-mWh" secondAttribute="centerX" id="1Zc-bT-d4G"/>
+                            <constraint firstItem="DR7-r1-gU2" firstAttribute="centerY" secondItem="dxc-Qs-mWh" secondAttribute="centerY" id="uss-tt-xsD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k0J-m5-9bz"/>
                     </view>
@@ -193,11 +194,49 @@
             </objects>
             <point key="canvasLocation" x="-446.37681159420293" y="-160.04464285714286"/>
         </scene>
+        <!--PatientSettingsView-->
+        <scene sceneID="jIC-qm-yeM">
+            <objects>
+                <viewController title="PatientSettingsView" id="Npk-FS-4Ke" customClass="PatientSettingsViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FxJ-im-RV3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixE-z5-aIE">
+                                <rect key="frame" x="132" y="733" width="150" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="416-Ui-yIv"/>
+                                    <constraint firstAttribute="height" constant="55" id="Aey-gp-Qa9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonAction:" destination="Npk-FS-4Ke" eventType="touchUpInside" id="E48-ZL-rKe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ixE-z5-aIE" firstAttribute="centerX" secondItem="FxJ-im-RV3" secondAttribute="centerX" id="Gsp-Hf-8vk"/>
+                            <constraint firstItem="f2r-i3-ZOA" firstAttribute="bottom" secondItem="ixE-z5-aIE" secondAttribute="bottom" constant="25" id="eUr-u0-hb2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f2r-i3-ZOA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="person" catalog="system" id="nbx-PY-flB"/>
+                    <connections>
+                        <outlet property="signOutButton" destination="ixE-z5-aIE" id="Bh1-XQ-lcx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtd-ct-obj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589.8550724637685" y="720.53571428571422"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logo.png" width="366" height="458"/>
         <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>

@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class PreLoginViewControler : UIViewController {
+class PreLoginViewController : UIViewController {
     
    
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -20,6 +20,9 @@ class PreLoginViewControler : UIViewController {
         super.viewDidLoad()
         
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         if(Auth.auth().currentUser != nil) {
             
             let uid = Auth.auth().currentUser!.uid
@@ -33,9 +36,6 @@ class PreLoginViewControler : UIViewController {
             self.transitionToLoginScreen()
             
         }
-        
-        
-        
     }
     
     func queryDBandTransitionToHome(userId uid: String){
@@ -81,10 +81,11 @@ class PreLoginViewControler : UIViewController {
     }
     
     func transitionToLoginScreen() {
-        let loginScreenVC = storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginViewController
+        let loginScreenVC = storyboard?.instantiateViewController(withIdentifier: "LoginPageVC") as? LoginViewController
         
         view.window?.rootViewController = loginScreenVC
         view.window?.makeKeyAndVisible()
+
         
         
     }
