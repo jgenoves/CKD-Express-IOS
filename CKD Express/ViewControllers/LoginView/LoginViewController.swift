@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupElements()
+        self.setupElements()
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
@@ -58,6 +58,7 @@ class LoginViewController: UIViewController {
             
             if let err = err {
                 print("Error Logging in \(err)")
+                self.displayErrors()
             } else {
                 
                 print("Login Success")
@@ -106,29 +107,16 @@ class LoginViewController: UIViewController {
       
     func setupElements() {
         self.errorLabel.alpha = 0
+        Utilities.styleFilledButton(self.loginButton)
+        Utilities.styleEmailAndPasswordInput(email: self.emailField, password: self.passwordField)
     }
     
     func validateFields(email e: String?, password p: String?) -> Bool {
         
-        resetLabels()
+        self.resetLabels()
         
-        var emailValid: Bool
-        var passwordValid: Bool
-        
-        if e != nil{
-            emailValid = Utilities.validateEmail(e!)
-        } else {
-            emailValid = false
-        }
-        
-        if p != nil{
-            passwordValid = Utilities.validatePassword(p!)
-        } else {
-            passwordValid = false
-        }
-        
-        if(!emailValid || !passwordValid){
-            displayErrors(emailStatus: emailValid, passwordStatus: passwordValid)
+        if(!Utilities.validatePassword(p!) || !Utilities.validateEmail(e!)){
+            self.displayErrors()
             return false
         }
             
@@ -140,25 +128,11 @@ class LoginViewController: UIViewController {
     
 
         
-    func displayErrors(emailStatus eStatus: Bool, passwordStatus pStatus: Bool){
-        
-        if(!eStatus && !pStatus){
-            self.errorLabel.alpha = 0.75
-            self.errorLabel.text = "Invalid Email and Password"
-            self.passwordField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
-            self.emailField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
-        }
-        else if(!eStatus) {
-            self.emailField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
-            self.errorLabel.alpha = 0.75
-            self.errorLabel.text = "Invalid Email"
-        }
-        else if(!pStatus){
-            self.passwordField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
-            self.errorLabel.alpha = 0.75
-            self.errorLabel.text = "Invalid Password"
-            
-        }
+    func displayErrors(){
+        self.errorLabel.alpha = 0.75
+        self.errorLabel.text = "Invalid Email or Password"
+        self.passwordField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
+        self.emailField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
     }
     
     func resetLabels() {

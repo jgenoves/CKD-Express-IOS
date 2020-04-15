@@ -73,5 +73,23 @@ class Utilities {
     }
     
     
+    
+    static func styleEmailAndPasswordInput(email email: UITextField, password password: UITextField){
+        
+        email.text = ""
+        email.placeholder = "Email:"
+        email.keyboardType = UIKeyboardType.init(rawValue: 7)!
+        
+        password.text = ""
+        password.placeholder = "Password:"
+    }
+    
+    
+    static func styleFilledButton(_ button: UIButton){
+        
+        button.layer.cornerRadius = 25.0
+    }
+    
+    
 
 }
