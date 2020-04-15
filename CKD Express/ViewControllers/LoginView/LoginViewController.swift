@@ -12,6 +12,7 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
+    
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var loginButton: UIButton!
@@ -131,13 +132,13 @@ class LoginViewController: UIViewController {
     func displayErrors(){
         self.errorLabel.alpha = 0.75
         self.errorLabel.text = "Invalid Email or Password"
-        self.passwordField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
-        self.emailField.textColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
+        self.passwordField.textColor = Utilities.app_errorTextColor
+        self.emailField.textColor = Utilities.app_errorTextColor
     }
     
     func resetLabels() {
-        self.emailField.textColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.75)
-        self.passwordField.textColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.75)
+        self.emailField.textColor = Utilities.app_inputTextColor
+        self.passwordField.textColor = Utilities.app_inputTextColor
         self.errorLabel.alpha = 0
         self.errorLabel.text = ""
         

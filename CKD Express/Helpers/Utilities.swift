@@ -11,6 +11,11 @@ import Firebase
 
 class Utilities {
     
+    static let app_blueColor = UIColor.init(red: 22/2555, green: 81/255, blue: 1, alpha: 1)
+    
+    static let app_inputTextColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.75)
+    static let app_errorTextColor = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 0.75)
+    
     
     
     static func loadPatientDataFromDB(data patientData: [String:Any]) -> Patient? {
@@ -79,9 +84,11 @@ class Utilities {
         email.text = ""
         email.placeholder = "Email:"
         email.keyboardType = UIKeyboardType.init(rawValue: 7)!
+        email.textColor = self.app_inputTextColor
         
         password.text = ""
         password.placeholder = "Password:"
+        email.textColor = self.app_inputTextColor
     }
     
     
