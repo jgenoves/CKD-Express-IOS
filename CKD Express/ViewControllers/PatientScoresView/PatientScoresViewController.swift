@@ -11,5 +11,16 @@ import UIKit
 
 class PatientScoresViewController : UITableViewController {
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var patientData: Patient?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        patientData = self.delegate.activePatientUser
+        
+    }
+    
     
 }
