@@ -24,11 +24,9 @@
 		05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */; };
 		05B877972446336E00B87CF6 /* PatientScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877962446336E00B87CF6 /* PatientScoresViewController.swift */; };
 		05B8779924479D8500B87CF6 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8779824479D8500B87CF6 /* PreLoginViewController.swift */; };
-		05B877A02447A41F00B87CF6 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8779F2447A41F00B87CF6 /* Logo.png */; };
 		05B877A42447AADC00B87CF6 /* PatientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877A32447AADC00B87CF6 /* PatientSettingsViewController.swift */; };
-		05B8B8B624293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
-		05B8B8B724293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
-		05B8B8B824293FBC008A2446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */; };
+		05B877A62449EED900B87CF6 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B877A52449EED900B87CF6 /* Logo.png */; };
+		05B877A82449F08A00B87CF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */; };
 		05B8B8BB24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
 		05B8B8BC24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
 		05B8B8BD24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
@@ -76,9 +74,9 @@
 		05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNotificationsViewController.swift; sourceTree = "<group>"; };
 		05B877962446336E00B87CF6 /* PatientScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScoresViewController.swift; sourceTree = "<group>"; };
 		05B8779824479D8500B87CF6 /* PreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
-		05B8779F2447A41F00B87CF6 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../../Downloads/Logo.png; sourceTree = "<group>"; };
 		05B877A32447AADC00B87CF6 /* PatientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSettingsViewController.swift; sourceTree = "<group>"; };
-		05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05B877A52449EED900B87CF6 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../../../Downloads/Logo.png; sourceTree = "<group>"; };
+		05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B8B8BA24294159008A2446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E0CEBC3CBC194291E5BB1EA /* Pods-CKD ExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD ExpressTests.release.xcconfig"; path = "Target Support Files/Pods-CKD ExpressTests/Pods-CKD ExpressTests.release.xcconfig"; sourceTree = "<group>"; };
 		434CB0473373E21EED340AAA /* Pods_CKD_Express_CKD_ExpressUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKD_Express_CKD_ExpressUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,10 +159,10 @@
 		056DF61C24030F63002703FE /* CKD Express */ = {
 			isa = PBXGroup;
 			children = (
+				05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */,
 				05B8779A2447A17500B87CF6 /* Assets */,
 				056DF6C324108859002703FE /* ViewControllers */,
 				05B6989D242A9ECE0099E0DD /* Helpers */,
-				05B8B8B524293FBC008A2446 /* GoogleService-Info.plist */,
 				056DF64D240310AD002703FE /* ModelComponents */,
 				056DF61D24030F63002703FE /* AppDelegate.swift */,
 				056DF61F24030F63002703FE /* SceneDelegate.swift */,
@@ -252,7 +250,7 @@
 		05B8779A2447A17500B87CF6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				05B8779F2447A41F00B87CF6 /* Logo.png */,
+				05B877A52449EED900B87CF6 /* Logo.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -397,9 +395,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B877A02447A41F00B87CF6 /* Logo.png in Resources */,
 				056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */,
-				05B8B8B624293FBC008A2446 /* GoogleService-Info.plist in Resources */,
+				05B877A62449EED900B87CF6 /* Logo.png in Resources */,
+				05B877A82449F08A00B87CF6 /* GoogleService-Info.plist in Resources */,
 				056DF62724030F6D002703FE /* Assets.xcassets in Resources */,
 				056DF62524030F63002703FE /* Main.storyboard in Resources */,
 			);
@@ -409,7 +407,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B8B8B724293FBC008A2446 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +414,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B8B8B824293FBC008A2446 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

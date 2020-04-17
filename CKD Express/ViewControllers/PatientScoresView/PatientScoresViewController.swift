@@ -20,6 +20,8 @@ class PatientScoresViewController : UITableViewController {
             
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65
+        
+        patientData = self.delegate.activePatientUser
     }
     
     override func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
