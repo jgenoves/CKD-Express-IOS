@@ -41,14 +41,14 @@ class PatientScoresViewController : UITableViewController {
         let item = patientData?.gfrScores[indexPath.row]
         // Configure the cell with the Item
         cell.scoreLabel.text = "\(item!.score)"
-        let date = item!.dateRecorded.dateValue()
-        let dateFormatter = DateFormatter()
-
-        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
-        let dateFromString : NSDate = dateFormatter.dateFromString(date)!
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        let datenew= dateFormatter.stringFromDate(dateFromString)
-        
+//        let date = item!.dateRecorded.dateValue()
+//        let dateFormatter = DateFormatter()
+//
+//        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+//        let dateFromString : NSDate = dateFormatter.dateFromString(date)!
+//        dateFormatter.dateFormat = "dd-MM-yyyy"
+//        let datenew= dateFormatter.stringFromDate(dateFromString)
+//        
         cell.dateLabel.text = "\(item!.dateRecorded.dateValue())"
         cell.locationLabel.text = "Location: \(item!.locationRecorded)"
         
