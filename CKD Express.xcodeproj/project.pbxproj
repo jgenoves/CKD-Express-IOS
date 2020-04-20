@@ -25,12 +25,13 @@
 		05B877972446336E00B87CF6 /* PatientScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877962446336E00B87CF6 /* PatientScoresViewController.swift */; };
 		05B8779924479D8500B87CF6 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8779824479D8500B87CF6 /* PreLoginViewController.swift */; };
 		05B877A42447AADC00B87CF6 /* PatientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877A32447AADC00B87CF6 /* PatientSettingsViewController.swift */; };
-		05B877A62449EED900B87CF6 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B877A52449EED900B87CF6 /* Logo.png */; };
-		05B877A82449F08A00B87CF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */; };
 		05B8B8BB24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
 		05B8B8BC24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
 		05B8B8BD24294159008A2446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8B8BA24294159008A2446 /* LoginViewController.swift */; };
 		C9028459D0F6910DA4EDF91E /* Pods_CKD_ExpressTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49603AD284ACA386AFCB6789 /* Pods_CKD_ExpressTests.framework */; };
+		D83EA272244CF4CC00F0A603 /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EA271244CF4CC00F0A603 /* ScoreCell.swift */; };
+		D86D27BB2449F44A00098843 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D86D27BA2449F44A00098843 /* Logo.png */; };
+		D86D27BD2449F47800098843 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D86D27BC2449F47800098843 /* GoogleService-Info.plist */; };
 		E13B70BA522234A17E385A2C /* Pods_CKD_Express.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5750390662B059B2DB7D5C0A /* Pods_CKD_Express.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,8 +76,6 @@
 		05B877962446336E00B87CF6 /* PatientScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScoresViewController.swift; sourceTree = "<group>"; };
 		05B8779824479D8500B87CF6 /* PreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
 		05B877A32447AADC00B87CF6 /* PatientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSettingsViewController.swift; sourceTree = "<group>"; };
-		05B877A52449EED900B87CF6 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../../../Downloads/Logo.png; sourceTree = "<group>"; };
-		05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B8B8BA24294159008A2446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E0CEBC3CBC194291E5BB1EA /* Pods-CKD ExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD ExpressTests.release.xcconfig"; path = "Target Support Files/Pods-CKD ExpressTests/Pods-CKD ExpressTests.release.xcconfig"; sourceTree = "<group>"; };
 		434CB0473373E21EED340AAA /* Pods_CKD_Express_CKD_ExpressUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKD_Express_CKD_ExpressUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +86,9 @@
 		6C4975C39323B36174B3BDDA /* Pods-CKD Express-CKD ExpressUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD Express-CKD ExpressUITests.debug.xcconfig"; path = "Target Support Files/Pods-CKD Express-CKD ExpressUITests/Pods-CKD Express-CKD ExpressUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77D14E54E1999B6C995ECFE8 /* Pods-CKD Express-CKD ExpressUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD Express-CKD ExpressUITests.release.xcconfig"; path = "Target Support Files/Pods-CKD Express-CKD ExpressUITests/Pods-CKD Express-CKD ExpressUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B778E4C5FEBAFBF2CAADDD88 /* Pods-CKD ExpressTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKD ExpressTests.debug.xcconfig"; path = "Target Support Files/Pods-CKD ExpressTests/Pods-CKD ExpressTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D83EA271244CF4CC00F0A603 /* ScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
+		D86D27BA2449F44A00098843 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../../Downloads/Logo.png; sourceTree = "<group>"; };
+		D86D27BC2449F47800098843 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,7 @@
 		056DF61C24030F63002703FE /* CKD Express */ = {
 			isa = PBXGroup;
 			children = (
-				05B877A72449F08A00B87CF6 /* GoogleService-Info.plist */,
+				D86D27BC2449F47800098843 /* GoogleService-Info.plist */,
 				05B8779A2447A17500B87CF6 /* Assets */,
 				056DF6C324108859002703FE /* ViewControllers */,
 				05B6989D242A9ECE0099E0DD /* Helpers */,
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				05B877962446336E00B87CF6 /* PatientScoresViewController.swift */,
+				D83EA271244CF4CC00F0A603 /* ScoreCell.swift */,
 			);
 			path = PatientScoresView;
 			sourceTree = "<group>";
@@ -250,7 +253,7 @@
 		05B8779A2447A17500B87CF6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				05B877A52449EED900B87CF6 /* Logo.png */,
+				D86D27BA2449F44A00098843 /* Logo.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -396,8 +399,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */,
-				05B877A62449EED900B87CF6 /* Logo.png in Resources */,
-				05B877A82449F08A00B87CF6 /* GoogleService-Info.plist in Resources */,
+				D86D27BB2449F44A00098843 /* Logo.png in Resources */,
+				D86D27BD2449F47800098843 /* GoogleService-Info.plist in Resources */,
 				056DF62724030F6D002703FE /* Assets.xcassets in Resources */,
 				056DF62524030F63002703FE /* Main.storyboard in Resources */,
 			);
@@ -531,6 +534,7 @@
 				056DF64F240310F3002703FE /* User.swift in Sources */,
 				056DF653240C6FB4002703FE /* GFRScore.swift in Sources */,
 				056DF61E24030F63002703FE /* AppDelegate.swift in Sources */,
+				D83EA272244CF4CC00F0A603 /* ScoreCell.swift in Sources */,
 				056DF62024030F63002703FE /* SceneDelegate.swift in Sources */,
 				05B877A42447AADC00B87CF6 /* PatientSettingsViewController.swift in Sources */,
 				05B6989F242A9F030099E0DD /* Utilities.swift in Sources */,

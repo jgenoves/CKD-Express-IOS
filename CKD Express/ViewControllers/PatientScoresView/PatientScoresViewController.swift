@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class PatientScoresViewController : UITableViewController {
     
@@ -30,14 +31,31 @@ class PatientScoresViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get a new or recycled cell
-         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",
-        for: indexPath)
+         //let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",
+        //for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ScoreCell",for: indexPath) as! ScoreCell
+        
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
         let item = patientData?.gfrScores[indexPath.row]
-        cell.textLabel?.text? = "\(item!.score)"
-        cell.detailTextLabel?.text = item!.locationRecorded
+        // Configure the cell with the Item
+        cell.scoreLabel.text = "\(item!.score)"
+        let date = item!.dateRecorded.dateValue()
+        let dateFormatter = DateFormatter()
+
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        let dateFromString : NSDate = dateFormatter.dateFromString(date)!
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let datenew= dateFormatter.stringFromDate(dateFromString)
+        
+        cell.dateLabel.text = "\(item!.dateRecorded.dateValue())"
+        cell.locationLabel.text = "Location: \(item!.locationRecorded)"
+        
+        if (patientData?.nephVisitNeeded == true) {
+            cell.scoreLabel.textColor = UIColor.red
+        }
+        
         return cell
     }
     
