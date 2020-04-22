@@ -15,6 +15,7 @@ class PatientScoresViewController : UITableViewController {
     
     var patientData: Patient?
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -55,10 +55,9 @@ class PreLoginViewController : UIViewController {
                     
                     self.delegate.activePatientUser = Utilities.loadPatientDataFromDB(data: userData)
                     
-                    print(self.delegate.activePatientUser.getGfrScores())
                     
-                    
-                    //Transition to appropriate view based on userType, either patient or admin
+                    self.delegate.activePatientUser.isNephDue()
+                    self.delegate.activePatientUser.isCheckupDue()
                     
                 
                     
