@@ -117,30 +117,26 @@ public class Patient: User {
     
     func determineCKDStage() {
         
-
-        if(self.baseGFRScore < 30) {
-            if(self.baseGFRScore < 15){
-                ckdStage = "Stage 5"
-            } else {
-                ckdStage = "Stage 4"
-            }
-        } else {
-            
-            if(self.baseGFRScore > 90){
-                ckdStage = "Stage 1"
-            }
-            else if(self.baseGFRScore >= 60 && self.baseGFRScore <= 90){
-                ckdStage = "Stage 2"
-            }
-            else if(self.baseGFRScore >= 45 && self.baseGFRScore < 60){
-                ckdStage = "Stage 3a"
-            }
-            else if(self.baseGFRScore >= 30 && self.baseGFRScore < 45){
-                ckdStage = "Stage 3b"
-            }
+        if(self.baseGFRScore > 90){
+            ckdStage = "Stage 1"
         }
-
-        
+        else if(self.baseGFRScore >= 60 && self.baseGFRScore <= 90){
+            ckdStage = "Stage 2"
+        }
+        else if(self.baseGFRScore >= 45 && self.baseGFRScore < 60){
+            ckdStage = "Stage 3a"
+        }
+        else if(self.baseGFRScore >= 30 && self.baseGFRScore < 45){
+            ckdStage = "Stage 3b"
+        }
+        else if( self.baseGFRScore < 30 && self.baseGFRScore >= 15){
+            ckdStage = "Stage 4"
+            self.nephVisitNeeded = true
+        }
+        else if( self.baseGFRScore < 15) {
+            ckdStage = "Stage 5"
+            self.nephVisitNeeded = true
+        }
         
     }
     
