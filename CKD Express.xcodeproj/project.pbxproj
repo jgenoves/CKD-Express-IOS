@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		037C577261B5B77C0EBF928E /* Pods_CKD_Express_CKD_ExpressUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434CB0473373E21EED340AAA /* Pods_CKD_Express_CKD_ExpressUITests.framework */; };
-		0504E6A1243126C8002E597F /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0504E6A0243126C8002E597F /* PatientHomeViewController.swift */; };
 		056DF61E24030F63002703FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61D24030F63002703FE /* AppDelegate.swift */; };
 		056DF62024030F63002703FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF61F24030F63002703FE /* SceneDelegate.swift */; };
-		056DF62524030F63002703FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62324030F63002703FE /* Main.storyboard */; };
 		056DF62724030F6D002703FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62624030F6D002703FE /* Assets.xcassets */; };
 		056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056DF62824030F6D002703FE /* LaunchScreen.storyboard */; };
 		056DF63524030F6D002703FE /* CKD_ExpressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF63424030F6D002703FE /* CKD_ExpressTests.swift */; };
@@ -19,6 +17,8 @@
 		056DF64F240310F3002703FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF64E240310F3002703FE /* User.swift */; };
 		056DF651240C6F94002703FE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF650240C6F94002703FE /* Patient.swift */; };
 		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
+		05A59A57245239350015D1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A56245239350015D1B7 /* Main.storyboard */; };
+		05A59A5D2452399F0015D1B7 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A59A5C2452399E0015D1B7 /* PatientHomeViewController.swift */; };
 		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */; };
 		05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */; };
@@ -53,11 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0504E6A0243126C8002E597F /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
 		056DF61A24030F63002703FE /* CKD Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CKD Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		056DF61D24030F63002703FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		056DF61F24030F63002703FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		056DF62424030F63002703FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		056DF62624030F6D002703FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056DF62924030F6D002703FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		056DF62B24030F6D002703FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		056DF64E240310F3002703FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		056DF650240C6F94002703FE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
+		05A59A56245239350015D1B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
+		05A59A5C2452399E0015D1B7 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPatientTabBarController.swift; sourceTree = "<group>"; };
 		05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNotificationsViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		0504E69F24312698002E597F /* PatientHomeView */ = {
 			isa = PBXGroup;
 			children = (
-				0504E6A0243126C8002E597F /* PatientHomeViewController.swift */,
+				05A59A5C2452399E0015D1B7 /* PatientHomeViewController.swift */,
 			);
 			path = PatientHomeView;
 			sourceTree = "<group>";
@@ -161,6 +161,7 @@
 		056DF61C24030F63002703FE /* CKD Express */ = {
 			isa = PBXGroup;
 			children = (
+				05A59A56245239350015D1B7 /* Main.storyboard */,
 				D86D27BC2449F47800098843 /* GoogleService-Info.plist */,
 				05B8779A2447A17500B87CF6 /* Assets */,
 				056DF6C324108859002703FE /* ViewControllers */,
@@ -168,7 +169,6 @@
 				056DF64D240310AD002703FE /* ModelComponents */,
 				056DF61D24030F63002703FE /* AppDelegate.swift */,
 				056DF61F24030F63002703FE /* SceneDelegate.swift */,
-				056DF62324030F63002703FE /* Main.storyboard */,
 				056DF62624030F6D002703FE /* Assets.xcassets */,
 				056DF62824030F6D002703FE /* LaunchScreen.storyboard */,
 				056DF62B24030F6D002703FE /* Info.plist */,
@@ -401,8 +401,8 @@
 				056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */,
 				D86D27BB2449F44A00098843 /* Logo.png in Resources */,
 				D86D27BD2449F47800098843 /* GoogleService-Info.plist in Resources */,
+				05A59A57245239350015D1B7 /* Main.storyboard in Resources */,
 				056DF62724030F6D002703FE /* Assets.xcassets in Resources */,
-				056DF62524030F63002703FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,9 +541,9 @@
 				05B8779924479D8500B87CF6 /* PreLoginViewController.swift in Sources */,
 				056DF651240C6F94002703FE /* Patient.swift in Sources */,
 				05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */,
-				0504E6A1243126C8002E597F /* PatientHomeViewController.swift in Sources */,
 				05B877972446336E00B87CF6 /* PatientScoresViewController.swift in Sources */,
 				05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */,
+				05A59A5D2452399F0015D1B7 /* PatientHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,14 +581,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		056DF62324030F63002703FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				056DF62424030F63002703FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		056DF62824030F6D002703FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
