@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HII-wg-0FP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HII-wg-0FP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -221,12 +221,53 @@
                     <view key="view" contentMode="scaleToFill" id="B6p-n6-rtL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-2M-zrY">
+                                <rect key="frame" x="10" y="54" width="394" height="749"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-0s-zaw">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5JP-Pi-8za"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-wB-gug">
+                                        <rect key="frame" x="0.0" y="50" width="394" height="149"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZu-QG-gfd">
+                                        <rect key="frame" x="0.0" y="199" width="394" height="550"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="550" id="qTG-6y-CeW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QIW-ts-EMQ" firstAttribute="bottom" secondItem="kjd-2M-zrY" secondAttribute="bottom" constant="10" id="8Pu-3q-85a"/>
+                            <constraint firstItem="kjd-2M-zrY" firstAttribute="leading" secondItem="QIW-ts-EMQ" secondAttribute="leading" constant="10" id="Ctp-96-RH2"/>
+                            <constraint firstItem="kjd-2M-zrY" firstAttribute="top" secondItem="QIW-ts-EMQ" secondAttribute="top" constant="10" id="dRf-us-8PF"/>
+                            <constraint firstItem="QIW-ts-EMQ" firstAttribute="trailing" secondItem="kjd-2M-zrY" secondAttribute="trailing" constant="10" id="k1m-8j-Gxk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QIW-ts-EMQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="exclamationmark.circle" catalog="system" selectedImage="exclamationmark.circle" id="nhK-RK-Pi5">
                         <color key="badgeColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="LabelA" destination="k1g-0s-zaw" id="7Xs-S4-9Q2"/>
+                        <outlet property="labelB" destination="JL6-wB-gug" id="mI5-6L-AQW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-ZU-jie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-r1-gU2">
-                                <rect key="frame" x="24" y="219" width="366" height="458"/>
+                                <rect key="frame" x="-159" y="-10" width="732" height="916"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -368,9 +409,9 @@
     </scenes>
     <resources>
         <image name="Logo.png" width="366" height="458"/>
-        <image name="exclamationmark.circle" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="list.bullet" catalog="system" width="128" height="88"/>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>
