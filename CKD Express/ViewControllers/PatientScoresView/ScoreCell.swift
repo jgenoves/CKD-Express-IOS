@@ -11,4 +11,5 @@ class ScoreCell: UITableViewCell {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var location: UILabel!
 }

@@ -10,6 +10,15 @@ import Foundation
 import UIKit
 import Firebase
 
+extension Date {
+       func toString( dateFormat format  : String ) -> String
+       {
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = format
+           return dateFormatter.string(from: self)
+       }
+   }
+
 class PatientScoresViewController : UITableViewController {
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -29,6 +38,8 @@ class PatientScoresViewController : UITableViewController {
         return (patientData?.gfrScores.count)!
     }
     
+   
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get a new or recycled cell
          //let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",
@@ -41,16 +52,13 @@ class PatientScoresViewController : UITableViewController {
         let item = patientData?.gfrScores[indexPath.row]
         // Configure the cell with the Item
         cell.scoreLabel.text = "\(item!.score)"
-//        let date = item!.dateRecorded.dateValue()
-//        let dateFormatter = DateFormatter()
-//
-//        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
-//        let dateFromString : NSDate = dateFormatter.dateFromString(date)!
-//        dateFormatter.dateFormat = "dd-MM-yyyy"
-//        let datenew= dateFormatter.stringFromDate(dateFromString)
-//        
-        cell.dateLabel.text = "\(item!.dateRecorded.dateValue())"
-        cell.locationLabel.text = "Location: \(item!.locationRecorded)"
+        
+        let dateString = item!.dateRecorded.dateValue().toString(dateFormat: "MM.dd.yyyy")
+    
+        cell.dateLabel.text = dateString
+        cell.location.text = "Location:"
+        cell.locationLabel.text = "\(item!.locationRecorded)"
+        cell.accessoryType = .disclosureIndicator
         
         if (patientData?.nephVisitNeeded == true) {
             cell.scoreLabel.textColor = UIColor.red
