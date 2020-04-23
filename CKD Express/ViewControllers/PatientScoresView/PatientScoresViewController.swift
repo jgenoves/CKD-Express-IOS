@@ -61,7 +61,7 @@ class PatientScoresViewController : UITableViewController {
         cell.locationLabel.text = "\(item!.locationRecorded)"
         cell.accessoryType = .disclosureIndicator
         
-        if (patientData?.nephVisitNeeded == true) {
+        if (patientData?.nephVisitNeeded == true && item === patientData?.getMostRecentScore()) {
             cell.scoreLabel.textColor = UIColor.red
         }
         
