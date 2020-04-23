@@ -79,11 +79,13 @@ class LoginViewController: UIViewController {
                             
                             self.delegate.activePatientUser = Utilities.loadPatientDataFromDB(data: userData)
                             
-                            print(self.delegate.activePatientUser.getGfrScores())
+                            self.delegate.activePatientUser.isNephDue()
+                            self.delegate.activePatientUser.isCheckupDue()
                             
-                            
-                            //Transition to appropriate view based on userType, either patient or admin
-                            
+                            print(self.delegate.activePatientUser.checkupNeeded)
+                            print(self.delegate.activePatientUser.nephVisitNeeded)
+                                                        
+                                                    
                         
                             
                         }
