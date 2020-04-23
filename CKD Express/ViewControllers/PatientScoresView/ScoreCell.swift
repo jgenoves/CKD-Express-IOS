@@ -4,7 +4,7 @@
 //
 //  Created by Hannah Meharg on 4/19/20.
 //  Copyright © 2020 Jordan Genovese. All rights reserved.
-//
+//  Hannah Meharg
 
 import UIKit
 class ScoreCell: UITableViewCell {
