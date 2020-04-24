@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asJ-zN-Hkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="430.43478260869568" y="720.53571428571422"/>
+            <point key="canvasLocation" x="2439" y="-985"/>
         </scene>
         <!--UIPatientTabBarController-->
         <scene sceneID="KCj-2P-fW1">
@@ -205,14 +205,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="Q3w-xZ-UQw" kind="relationship" relationship="viewControllers" id="1x7-uB-A54"/>
-                        <segue destination="ujc-W0-nA0" kind="relationship" relationship="viewControllers" id="AIg-pW-QwF"/>
+                        <segue destination="Sae-0t-R4U" kind="relationship" relationship="viewControllers" id="oVM-0n-YgT"/>
                         <segue destination="ySk-7V-YWc" kind="relationship" relationship="viewControllers" id="GGK-LZ-4EA"/>
                         <segue destination="Npk-FS-4Ke" kind="relationship" relationship="viewControllers" id="A9G-fP-MTs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcK-22-z2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-160"/>
+            <point key="canvasLocation" x="1217" y="-159"/>
         </scene>
         <!--PatientNotificationsView-->
         <scene sceneID="zk7-8x-2CT">
@@ -271,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-ZU-jie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="721"/>
+            <point key="canvasLocation" x="2438" y="439"/>
         </scene>
         <!--PatientScoresView-->
         <scene sceneID="Rad-pv-3Ge">
@@ -331,6 +331,7 @@
                                     <outlet property="location" destination="EJn-0G-2bd" id="vwC-hf-swF"/>
                                     <outlet property="locationLabel" destination="HOt-0B-78J" id="plv-iE-mg3"/>
                                     <outlet property="scoreLabel" destination="bc9-Ym-VqF" id="dcw-xf-rJG"/>
+                                    <segue destination="AhT-0Q-EiN" kind="show" identifier="showScoreDetail" id="0dE-wC-Uts"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -340,10 +341,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Scores" image="list.bullet" catalog="system" id="VIB-fV-wQL"/>
+                    <navigationItem key="navigationItem" title="GFR Scores" id="n04-gC-Tgy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fus-js-ezH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149.2753623188407" y="720.53571428571422"/>
+            <point key="canvasLocation" x="3146" y="-285"/>
         </scene>
         <!--PreLoginView-->
         <scene sceneID="J6r-bE-7D4">
@@ -354,7 +356,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-r1-gU2">
-                                <rect key="frame" x="-159" y="-10" width="732" height="916"/>
+                                <rect key="frame" x="24" y="219" width="366" height="458"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -404,7 +406,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtd-ct-obj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2589.8550724637685" y="720.53571428571422"/>
+            <point key="canvasLocation" x="2438" y="1193"/>
+        </scene>
+        <!--Patient Score Detail View Controller-->
+        <scene sceneID="sIW-L5-kHV">
+            <objects>
+                <viewController id="AhT-0Q-EiN" customClass="PatientScoreDetailViewController" customModule="CKD_Express" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vkW-f3-R3I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score from:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-Ou-ehp">
+                                <rect key="frame" x="20" y="122" width="196" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiZ-de-XTs">
+                                <rect key="frame" x="107" y="177" width="200" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" red="0.085495567130000005" green="0.31760714470000001" blue="1" alpha="0.65377420770000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-Hf-W5F">
+                                <rect key="frame" x="20" y="248" width="374" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="EUa-IE-TYJ"/>
+                                    <constraint firstAttribute="height" constant="1" id="TnF-08-Wh6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBu-Z1-VdV">
+                                <rect key="frame" x="20" y="518" width="374" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HVw-8X-GzY"/>
+                                    <constraint firstAttribute="width" constant="374" id="qoi-1m-7sX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoV-fi-ZeZ">
+                                <rect key="frame" x="68" y="315" width="278" height="126"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="105"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-yq-XrM">
+                                <rect key="frame" x="14" y="561.5" width="28" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="47M-Bb-BCp"/>
+                                    <constraint firstAttribute="height" constant="38" id="pR4-nU-qe4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz1-bu-hu8">
+                                <rect key="frame" x="50" y="562" width="104" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7zh-Hf-W5F" firstAttribute="centerX" secondItem="ZoV-fi-ZeZ" secondAttribute="centerX" id="0ZD-Gy-576"/>
+                            <constraint firstItem="Ele-yq-XrM" firstAttribute="top" secondItem="zz1-bu-hu8" secondAttribute="top" id="1LW-Y5-giH"/>
+                            <constraint firstItem="zz1-bu-hu8" firstAttribute="leading" secondItem="Ele-yq-XrM" secondAttribute="trailing" constant="8" symbolic="YES" id="1hd-Zb-KdX"/>
+                            <constraint firstItem="Ele-yq-XrM" firstAttribute="leading" secondItem="uNJ-mo-cGh" secondAttribute="leading" constant="14" id="6vk-qI-HLR"/>
+                            <constraint firstItem="PiZ-de-XTs" firstAttribute="centerX" secondItem="vkW-f3-R3I" secondAttribute="centerX" id="IVN-nT-KeJ"/>
+                            <constraint firstItem="UBu-Z1-VdV" firstAttribute="top" secondItem="ZoV-fi-ZeZ" secondAttribute="bottom" constant="77" id="Nvu-G0-lXm"/>
+                            <constraint firstItem="Wlv-Ou-ehp" firstAttribute="top" secondItem="uNJ-mo-cGh" secondAttribute="top" constant="34" id="P9V-l6-Tok"/>
+                            <constraint firstItem="7zh-Hf-W5F" firstAttribute="leading" secondItem="Wlv-Ou-ehp" secondAttribute="leading" id="RgU-ZE-es6"/>
+                            <constraint firstItem="7zh-Hf-W5F" firstAttribute="top" secondItem="PiZ-de-XTs" secondAttribute="bottom" constant="16" id="YnQ-JV-bj3"/>
+                            <constraint firstItem="PiZ-de-XTs" firstAttribute="top" secondItem="Wlv-Ou-ehp" secondAttribute="bottom" constant="21" id="mWu-Xy-L13"/>
+                            <constraint firstItem="zz1-bu-hu8" firstAttribute="top" secondItem="UBu-Z1-VdV" secondAttribute="bottom" constant="43" id="t4E-ZV-p9g"/>
+                            <constraint firstItem="ZoV-fi-ZeZ" firstAttribute="top" secondItem="7zh-Hf-W5F" secondAttribute="bottom" constant="66" id="tKA-bR-gaW"/>
+                            <constraint firstItem="Wlv-Ou-ehp" firstAttribute="leading" secondItem="uNJ-mo-cGh" secondAttribute="leading" constant="20" id="uma-Hr-xiS"/>
+                            <constraint firstItem="UBu-Z1-VdV" firstAttribute="leading" secondItem="7zh-Hf-W5F" secondAttribute="leading" id="zYy-K2-M8G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uNJ-mo-cGh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pNk-8r-FzQ"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="PiZ-de-XTs" id="8zQ-nM-cKV"/>
+                        <outlet property="locationLabel" destination="zz1-bu-hu8" id="Ts5-T5-MlT"/>
+                        <outlet property="scoreLabel" destination="ZoV-fi-ZeZ" id="yXy-g8-tKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qw-Nf-7BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3971.0144927536235" y="-285.26785714285711"/>
+        </scene>
+        <!--PatientScoresNavController-->
+        <scene sceneID="jsr-EW-Spb">
+            <objects>
+                <navigationController title="PatientScoresNavController" id="Sae-0t-R4U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scores" image="list.bullet" catalog="system" id="5eh-ZY-EQX"/>
+                    <navigationItem key="navigationItem" id="CH7-mJ-8OM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJw-Wx-CTZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ujc-W0-nA0" kind="relationship" relationship="rootViewController" id="zek-w1-vA7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veV-iN-F5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="-285"/>
         </scene>
     </scenes>
     <resources>
@@ -412,6 +518,7 @@
         <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="mappin" catalog="system" width="52" height="64"/>
         <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>

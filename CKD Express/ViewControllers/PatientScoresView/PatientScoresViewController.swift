@@ -68,5 +68,39 @@ class PatientScoresViewController : UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            switch segue.identifier {
+            case "showScoreDetail"?:
+                if let row = tableView.indexPathForSelectedRow?.row {
+                    
+                    let patientScore = patientData?.gfrScores[row]
+                    let scoreDetailViewController = segue.destination as! PatientScoreDetailViewController
+                    scoreDetailViewController.patientScore = patientScore
+                    scoreDetailViewController.triggerRed = patientData?.nephVisitNeeded
+                }
+        
+            default:
+                preconditionFailure("Unexpected segue identifier.")
+                
+            }
+            
+            
+        
+        }
+        
+        @IBAction func addNewItem(_ sender: UIButton) {
+    //        // Create a new item and add it to the store
+    //        let newItem = prescriptionStore.createPrescription()
+    //        // Figure out where that item is in the array
+    //        if let index = prescriptionStore.allItems.index(of: newItem) {
+    //            let indexPath = IndexPath(row: index, section: 0)
+    //                // Insert this new row into the table
+    //            tableView.insertRows(at: [indexPath], with: .automatic)
+    //
+    //        }
+            
+        }
+    
     
 }
