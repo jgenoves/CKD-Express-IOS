@@ -38,14 +38,18 @@ class PatientNotificationsViewController : UIViewController {
         super.viewWillAppear(animated)
         if patientData?.needCheckup() == true && patientData?.needNephVisit() == true{
             headerLabel.text = "2 New Notifications"
-            LabelA.text = " Schedule a Checkup to get a new GFR Score"
-            LabelA.textColor = UIColor.white
-            LabelA.backgroundColor = UIColor.lightGray
+            LabelA.text = "    Schedule a Checkup to get a new GFR Score"
+            LabelA.textColor = UIColor.red
+            LabelA.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+            LabelA.layer.cornerRadius = 10.0
+            LabelA.clipsToBounds = true
             
             
-            labelB.text = " Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.white
-            labelB.backgroundColor = UIColor.lightGray
+            labelB.text = "    Schedule a Nephrology Appointment"
+            labelB.textColor = UIColor.orange
+            labelB.backgroundColor = UIColor.orange.withAlphaComponent(0.2)
+            labelB.layer.cornerRadius = 10.0
+            labelB.clipsToBounds = true
             
         }
         else if patientData?.needCheckup() == true && patientData?.needNephVisit() == false{
@@ -64,7 +68,9 @@ class PatientNotificationsViewController : UIViewController {
             LabelA.text = " Schedule a Nephrology Appointment"
             
             LabelA.textColor = UIColor.white
-            LabelA.backgroundColor = UIColor.lightGray
+            LabelA.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+            LabelA.layer.cornerRadius = 10.0
+            LabelA.clipsToBounds = true
             //LabelA.layer.borderColor = UIColor.red.cgColor
             //LabelA.layer.borderWidth = 2.0
             
