@@ -41,7 +41,6 @@ class PatientHomeViewController: UIViewController {
             nephVisitWarning.isHidden = false
         }
         
-        patientData!.checkupNeeded = true
         if(patientData!.checkupNeeded) {
             lastCheckupField.textColor = UIColor.systemOrange
             lastCheckupField.backgroundColor = UIColor.systemOrange.withAlphaComponent( 0.1 )

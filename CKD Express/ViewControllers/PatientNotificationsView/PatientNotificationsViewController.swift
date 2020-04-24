@@ -38,52 +38,51 @@ class PatientNotificationsViewController : UIViewController {
         super.viewWillAppear(animated)
         if patientData?.needCheckup() == true && patientData?.needNephVisit() == true{
             headerLabel.text = "2 New Notifications"
-            LabelA.text = " Schedule a Checkup to get a new GFR Score"
-            LabelA.textColor = UIColor.white
-            LabelA.backgroundColor = UIColor.lightGray
+            LabelA.text = "Schedule a Checkup to get a new GFR Score"
+            LabelA.textColor = UIColor.orange
+            LabelA.backgroundColor = UIColor.orange.withAlphaComponent(0.2)
+            LabelA.layer.cornerRadius = 10.0
+            LabelA.clipsToBounds = true
             
             
-            labelB.text = " Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.white
-            labelB.backgroundColor = UIColor.lightGray
+            labelB.text = "Schedule an appointment with your Nephrologist"
+            labelB.font = UIFont.init(name: "Helvetica", size: 16)!
+            labelB.textColor = UIColor.red
+            labelB.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+            labelB.layer.cornerRadius = 10.0
+            labelB.clipsToBounds = true
             
         }
         else if patientData?.needCheckup() == true && patientData?.needNephVisit() == false{
             headerLabel.text = "1 New Notification"
-            
-            LabelA.text = " Schedule a Checkup to get a new GFR Score"
-            LabelA.textColor = UIColor.white
-            LabelA.backgroundColor = UIColor.lightGray
-            LabelA.layer.borderColor = UIColor.black.cgColor
+            LabelA.text = "Schedule a Checkup to get a new GFR Score"
+            LabelA.textColor = UIColor.orange
+            LabelA.backgroundColor = UIColor.orange.withAlphaComponent(0.2)
+            LabelA.layer.cornerRadius = 10.0
+            LabelA.clipsToBounds = true
            
-            labelB.text = " Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.white
+            labelB.isHidden = true;
         }
         else if patientData?.needCheckup() == false && patientData?.needNephVisit() == true{
             headerLabel.text = "1 New Notification"
-            LabelA.text = " Schedule a Nephrology Appointment"
-            
-            LabelA.textColor = UIColor.white
-            LabelA.backgroundColor = UIColor.lightGray
-            //LabelA.layer.borderColor = UIColor.red.cgColor
-            //LabelA.layer.borderWidth = 2.0
-            
-            
-            labelB.text = " Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.white
-            labelB.backgroundColor = UIColor.white
+            LabelA.text = "Schedule an appointment with your Nephrologist"
+            LabelA.font = UIFont.init(name: "Helvetica", size: 16)!
+            LabelA.textColor = UIColor.red
+            LabelA.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+            LabelA.layer.cornerRadius = 10.0
+            LabelA.clipsToBounds = true
+
+            labelB.isHidden = true
         }
         
         else {
             headerLabel.text = "No New Notifications"
             
-            LabelA.text = " No Notifications"
-            LabelA.textColor = UIColor.white
+            LabelA.text = "You are healthy and on track with your apointments!"
+            LabelA.textColor = UIColor.lightGray
             LabelA.backgroundColor = UIColor.white
             
-            labelB.text = " Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.white
-            labelB.backgroundColor = UIColor.white
+            labelB.isHidden = true
         }
        
     }
