@@ -30,8 +30,8 @@
             filePath = "CKD Express/ViewControllers/LoginView/PreLoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "transitionToLoginScreen()"
             landmarkType = "7">
          </BreakpointContent>
