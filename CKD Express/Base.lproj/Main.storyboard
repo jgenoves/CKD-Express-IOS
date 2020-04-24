@@ -487,7 +487,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixE-z5-aIE">
-                                <rect key="frame" x="132" y="733" width="150" height="55"/>
+                                <rect key="frame" x="132" y="420.5" width="150" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="416-Ui-yIv"/>
                                     <constraint firstAttribute="height" constant="55" id="Aey-gp-Qa9"/>
@@ -502,7 +502,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ixE-z5-aIE" firstAttribute="centerX" secondItem="FxJ-im-RV3" secondAttribute="centerX" id="Gsp-Hf-8vk"/>
-                            <constraint firstItem="f2r-i3-ZOA" firstAttribute="bottom" secondItem="ixE-z5-aIE" secondAttribute="bottom" constant="25" id="eUr-u0-hb2"/>
+                            <constraint firstItem="ixE-z5-aIE" firstAttribute="centerY" secondItem="FxJ-im-RV3" secondAttribute="centerY" id="pVg-3a-CYw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f2r-i3-ZOA"/>
                     </view>
