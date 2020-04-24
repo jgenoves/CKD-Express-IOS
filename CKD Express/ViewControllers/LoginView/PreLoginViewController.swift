@@ -58,9 +58,7 @@ class PreLoginViewController : UIViewController {
                     
                     self.delegate.activePatientUser.isNephDue()
                     self.delegate.activePatientUser.isCheckupDue()
-                    
-                    self.delegate.activePatientUser.checkupNeeded = true
-                    
+                                        
                 }
                 
                 self.transitionToPatientHome()
