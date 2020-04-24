@@ -10,6 +10,7 @@ import UIKit
 
 class PatientNotificationsViewController : UIViewController {
 
+    @IBOutlet var headerLabel: UILabel!
     @IBOutlet var LabelA: UILabel!
     @IBOutlet var labelB: UILabel!
     
@@ -29,34 +30,53 @@ class PatientNotificationsViewController : UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if patientData?.needCheckup() == true && patientData?.needNephVisit() == true{
-            LabelA.text = "Schedule a Checkup to get a new GFR Score"
-            LabelA.textColor = UIColor.red
+            headerLabel.text = "2 New Notifications"
+            LabelA.text = " Schedule a Checkup to get a new GFR Score"
+            LabelA.textColor = UIColor.white
+            LabelA.backgroundColor = UIColor.lightGray
             
-            labelB.text = "Schedule a Nephrology Appointment"
-            labelB.textColor = UIColor.red
+            
+            labelB.text = " Schedule a Nephrology Appointment"
+            labelB.textColor = UIColor.white
+            labelB.backgroundColor = UIColor.lightGray
             
         }
         else if patientData?.needCheckup() == true && patientData?.needNephVisit() == false{
-           LabelA.text = "Schedule a Checkup to get a new GFR Score"
-           LabelA.textColor = UIColor.red
+            headerLabel.text = "1 New Notification"
+            
+            LabelA.text = " Schedule a Checkup to get a new GFR Score"
+            LabelA.textColor = UIColor.white
+            LabelA.backgroundColor = UIColor.lightGray
+            LabelA.layer.borderColor = UIColor.black.cgColor
            
-           labelB.text = "Schedule a Nephrology Appointment"
-           labelB.textColor = UIColor.white
+            labelB.text = " Schedule a Nephrology Appointment"
+            labelB.textColor = UIColor.white
         }
         else if patientData?.needCheckup() == false && patientData?.needNephVisit() == true{
-            LabelA.text = "Schedule a Nephrology Appointment"
-            LabelA.textColor = UIColor.red
+            headerLabel.text = "1 New Notification"
+            LabelA.text = " Schedule a Nephrology Appointment"
             
-            labelB.text = "Schedule a Nephrology Appointment"
+            LabelA.textColor = UIColor.white
+            LabelA.backgroundColor = UIColor.lightGray
+            //LabelA.layer.borderColor = UIColor.red.cgColor
+            //LabelA.layer.borderWidth = 2.0
+            
+            
+            labelB.text = " Schedule a Nephrology Appointment"
             labelB.textColor = UIColor.white
+            labelB.backgroundColor = UIColor.white
         }
         
         else {
-            LabelA.text = "No Notifications"
-            LabelA.textColor = UIColor.black
+            headerLabel.text = "No New Notifications"
             
-            labelB.text = "Schedule a Nephrology Appointment"
+            LabelA.text = " No Notifications"
+            LabelA.textColor = UIColor.white
+            LabelA.backgroundColor = UIColor.white
+            
+            labelB.text = " Schedule a Nephrology Appointment"
             labelB.textColor = UIColor.white
+            labelB.backgroundColor = UIColor.white
         }
        
     }
