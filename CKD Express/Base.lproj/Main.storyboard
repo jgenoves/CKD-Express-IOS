@@ -404,7 +404,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZW-01-wMI">
-                                            <rect key="frame" x="35" y="42" width="39.5" height="27"/>
+                                            <rect key="frame" x="35" y="47" width="39.5" height="22"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -430,7 +430,6 @@
                                         <constraint firstItem="bc9-Ym-VqF" firstAttribute="top" secondItem="28K-fQ-qhE" secondAttribute="topMargin" id="4Dt-2p-dZy"/>
                                         <constraint firstItem="bc9-Ym-VqF" firstAttribute="leading" secondItem="28K-fQ-qhE" secondAttribute="leadingMargin" constant="15" id="IMc-I0-uHE"/>
                                         <constraint firstItem="qZW-01-wMI" firstAttribute="bottom" secondItem="28K-fQ-qhE" secondAttribute="bottomMargin" id="MfO-Y0-yYG"/>
-                                        <constraint firstItem="qZW-01-wMI" firstAttribute="top" secondItem="bc9-Ym-VqF" secondAttribute="bottom" constant="10" id="l1Y-yR-x4t"/>
                                         <constraint firstItem="qZW-01-wMI" firstAttribute="leading" secondItem="bc9-Ym-VqF" secondAttribute="leading" id="pyd-h0-nWq"/>
                                     </constraints>
                                 </tableViewCellContentView>
