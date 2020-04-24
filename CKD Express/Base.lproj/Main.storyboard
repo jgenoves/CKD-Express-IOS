@@ -417,19 +417,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score from:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-Ou-ehp">
-                                <rect key="frame" x="20" y="122" width="196" height="34"/>
+                                <rect key="frame" x="20" y="122" width="195.5" height="33.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiZ-de-XTs">
-                                <rect key="frame" x="107" y="177" width="200" height="55"/>
+                                <rect key="frame" x="107" y="176.5" width="200" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <color key="textColor" red="0.085495567130000005" green="0.31760714470000001" blue="1" alpha="0.65377420770000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-Hf-W5F">
-                                <rect key="frame" x="20" y="248" width="374" height="1"/>
+                                <rect key="frame" x="20" y="247.5" width="374" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="EUa-IE-TYJ"/>
@@ -437,7 +437,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBu-Z1-VdV">
-                                <rect key="frame" x="20" y="518" width="374" height="1"/>
+                                <rect key="frame" x="20" y="517" width="374" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="HVw-8X-GzY"/>
@@ -445,24 +445,28 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoV-fi-ZeZ">
-                                <rect key="frame" x="68" y="315" width="278" height="126"/>
+                                <rect key="frame" x="68.5" y="314.5" width="277.5" height="125.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="105"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-yq-XrM">
-                                <rect key="frame" x="14" y="561.5" width="28" height="38"/>
+                                <rect key="frame" x="14" y="560.5" width="28" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="47M-Bb-BCp"/>
                                     <constraint firstAttribute="height" constant="38" id="pR4-nU-qe4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz1-bu-hu8">
-                                <rect key="frame" x="50" y="562" width="104" height="34"/>
+                                <rect key="frame" x="50" y="561" width="104" height="33.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h9N-i2-13V">
+                                <rect key="frame" x="373.5" y="257" width="20.5" height="18"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -470,6 +474,8 @@
                             <constraint firstItem="Ele-yq-XrM" firstAttribute="top" secondItem="zz1-bu-hu8" secondAttribute="top" id="1LW-Y5-giH"/>
                             <constraint firstItem="zz1-bu-hu8" firstAttribute="leading" secondItem="Ele-yq-XrM" secondAttribute="trailing" constant="8" symbolic="YES" id="1hd-Zb-KdX"/>
                             <constraint firstItem="Ele-yq-XrM" firstAttribute="leading" secondItem="uNJ-mo-cGh" secondAttribute="leading" constant="14" id="6vk-qI-HLR"/>
+                            <constraint firstItem="h9N-i2-13V" firstAttribute="top" secondItem="7zh-Hf-W5F" secondAttribute="bottom" constant="7.5" id="7wN-tt-ad7"/>
+                            <constraint firstItem="uNJ-mo-cGh" firstAttribute="trailing" secondItem="h9N-i2-13V" secondAttribute="trailing" constant="20" id="HQw-9e-6QP"/>
                             <constraint firstItem="PiZ-de-XTs" firstAttribute="centerX" secondItem="vkW-f3-R3I" secondAttribute="centerX" id="IVN-nT-KeJ"/>
                             <constraint firstItem="UBu-Z1-VdV" firstAttribute="top" secondItem="ZoV-fi-ZeZ" secondAttribute="bottom" constant="77" id="Nvu-G0-lXm"/>
                             <constraint firstItem="Wlv-Ou-ehp" firstAttribute="top" secondItem="uNJ-mo-cGh" secondAttribute="top" constant="34" id="P9V-l6-Tok"/>
@@ -488,6 +494,7 @@
                         <outlet property="dateLabel" destination="PiZ-de-XTs" id="8zQ-nM-cKV"/>
                         <outlet property="locationLabel" destination="zz1-bu-hu8" id="Ts5-T5-MlT"/>
                         <outlet property="scoreLabel" destination="ZoV-fi-ZeZ" id="yXy-g8-tKU"/>
+                        <outlet property="warningImage" destination="h9N-i2-13V" id="YXo-Qe-apA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qw-Nf-7BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -516,6 +523,7 @@
     <resources>
         <image name="Logo.png" width="366" height="458"/>
         <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
+        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="mappin" catalog="system" width="52" height="64"/>

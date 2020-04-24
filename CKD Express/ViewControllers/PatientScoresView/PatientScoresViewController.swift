@@ -77,7 +77,13 @@ class PatientScoresViewController : UITableViewController {
                     let patientScore = patientData?.gfrScores[row]
                     let scoreDetailViewController = segue.destination as! PatientScoreDetailViewController
                     scoreDetailViewController.patientScore = patientScore
-                    scoreDetailViewController.triggerRed = patientData?.nephVisitNeeded
+                    
+                    if(patientData?.nephVisitNeeded == true && patientScore === patientData?.getMostRecentScore()) {
+                        scoreDetailViewController.triggerRed = true
+                    } else {
+                        scoreDetailViewController.triggerRed = false
+                    }
+                    
                 }
         
             default:

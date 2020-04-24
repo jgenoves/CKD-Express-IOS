@@ -18,6 +18,7 @@ class PatientScoreDetailViewController : UIViewController {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var warningImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,8 @@ class PatientScoreDetailViewController : UIViewController {
         scoreLabel.text = scoreString
         if(self.triggerRed){
             scoreLabel.textColor = UIColor.systemRed
-        }
-        
+            warningImage.isHidden = false
+        } 
         
         locationLabel.text = patientScore.locationRecorded
         
