@@ -45,6 +45,8 @@ class Utilities {
             
         }
         
+        gfrScores = gfrScores.sorted(by: { $0.id > $1.id })
+        
         
         
         let newPatient = Patient(firstName: firstName, lastName: lastName, ckdStage: ckdStage, gfrScores: gfrScores, checkupNeeded: checkupNeeded, nepthVisitNeeded: nepthVisitNeeded, baseGFRScore: baseGFRScore)
