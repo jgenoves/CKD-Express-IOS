@@ -19,11 +19,11 @@
 		056DF653240C6FB4002703FE /* GFRScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DF652240C6FB4002703FE /* GFRScore.swift */; };
 		05A59A6024523CD10015D1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A5E24523CD10015D1B7 /* Main.storyboard */; };
 		05A59A6224523D290015D1B7 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A59A6124523D290015D1B7 /* PatientHomeViewController.swift */; };
-		05A59A6424533C0D0015D1B7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A6324533C0B0015D1B7 /* Logo.png */; };
 		05A59A6624533C1E0015D1B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A6524533C1E0015D1B7 /* GoogleService-Info.plist */; };
 		05A59A68245345A90015D1B7 /* PatientScoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A59A67245345A90015D1B7 /* PatientScoreDetailViewController.swift */; };
-		05A59A6C2453698B0015D1B7 /* Logo_no_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A6B2453698B0015D1B7 /* Logo_no_text.png */; };
-		05A59A7224537E880015D1B7 /* Logo_no_text_120px.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7124537E880015D1B7 /* Logo_no_text_120px.png */; };
+		05A59A7624538FF90015D1B7 /* Logo_no_text_120px.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7324538FF80015D1B7 /* Logo_no_text_120px.png */; };
+		05A59A7724538FF90015D1B7 /* Logo_no_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7424538FF80015D1B7 /* Logo_no_text.png */; };
+		05A59A7824538FF90015D1B7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7524538FF90015D1B7 /* Logo.png */; };
 		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */; };
 		05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */; };
@@ -73,11 +73,11 @@
 		056DF652240C6FB4002703FE /* GFRScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRScore.swift; sourceTree = "<group>"; };
 		05A59A5F24523CD10015D1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05A59A6124523D290015D1B7 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
-		05A59A6324533C0B0015D1B7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../../Downloads/Logo.png; sourceTree = "<group>"; };
 		05A59A6524533C1E0015D1B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05A59A67245345A90015D1B7 /* PatientScoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScoreDetailViewController.swift; sourceTree = "<group>"; };
-		05A59A6B2453698B0015D1B7 /* Logo_no_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_no_text.png; path = ../../../../../Downloads/Logo_no_text.png; sourceTree = "<group>"; };
-		05A59A7124537E880015D1B7 /* Logo_no_text_120px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_no_text_120px.png; path = ../../../../../Downloads/Logo_no_text_120px.png; sourceTree = "<group>"; };
+		05A59A7324538FF80015D1B7 /* Logo_no_text_120px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_no_text_120px.png; sourceTree = "<group>"; };
+		05A59A7424538FF80015D1B7 /* Logo_no_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_no_text.png; sourceTree = "<group>"; };
+		05A59A7524538FF90015D1B7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPatientTabBarController.swift; sourceTree = "<group>"; };
 		05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNotificationsViewController.swift; sourceTree = "<group>"; };
@@ -260,9 +260,9 @@
 		05B8779A2447A17500B87CF6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				05A59A7124537E880015D1B7 /* Logo_no_text_120px.png */,
-				05A59A6B2453698B0015D1B7 /* Logo_no_text.png */,
-				05A59A6324533C0B0015D1B7 /* Logo.png */,
+				05A59A7324538FF80015D1B7 /* Logo_no_text_120px.png */,
+				05A59A7424538FF80015D1B7 /* Logo_no_text.png */,
+				05A59A7524538FF90015D1B7 /* Logo.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -408,11 +408,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				056DF62A24030F6D002703FE /* LaunchScreen.storyboard in Resources */,
+				05A59A7824538FF90015D1B7 /* Logo.png in Resources */,
 				05A59A6024523CD10015D1B7 /* Main.storyboard in Resources */,
 				05A59A6624533C1E0015D1B7 /* GoogleService-Info.plist in Resources */,
-				05A59A6424533C0D0015D1B7 /* Logo.png in Resources */,
-				05A59A7224537E880015D1B7 /* Logo_no_text_120px.png in Resources */,
-				05A59A6C2453698B0015D1B7 /* Logo_no_text.png in Resources */,
+				05A59A7624538FF90015D1B7 /* Logo_no_text_120px.png in Resources */,
+				05A59A7724538FF90015D1B7 /* Logo_no_text.png in Resources */,
 				056DF62724030F6D002703FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
