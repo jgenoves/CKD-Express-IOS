@@ -44,7 +44,7 @@ class ChangeCriteriaViewController : UIViewController {
                 self.newConfirmField.placeholder = "Confirm new Password"
                 
                 self.newField.isSecureTextEntry = true
-                self.newField.isSecureTextEntry = true
+                self.newConfirmField.isSecureTextEntry = true
                 
             default:
                 self.newField.placeholder = "Error"
