@@ -13,19 +13,49 @@ import FirebaseAuth
 
 class PatientSettingsViewController : UIViewController {
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var patientData: Patient?
+    
     @IBOutlet var signOutButton: UIButton!
     
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var dobLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        patientData = self.delegate.activePatientUser
         
-        self.setupElements()
         
         
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.setupElements()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+               
+               switch segue.identifier {
+               case "showChangeEmail"?:
+                let changeEmailViewController = segue.destination as! ChangeCriteriaViewController
+                changeEmailViewController.type = "email"
+
+               case "showChangePassword"?:
+                let changePasswordViewController = segue.destination as! ChangeCriteriaViewController
+                changePasswordViewController.type = "password"
+                
+           
+               default:
+                   preconditionFailure("Unexpected segue identifier.")
+                   
+               }
+               
+               
+           
+           }
     
     @IBAction func signOutButtonAction(_ sender: UIButton) {
         
@@ -82,6 +112,10 @@ class PatientSettingsViewController : UIViewController {
     
     
     func setupElements () {
+        
+        nameLabel.text = "\(patientData!.firstName + " " + patientData!.lastName)"
+        dobLabel.text = patientData?.dob.dateValue().toString(dateFormat: "MM/dd/yyyy")
+        
         
         Utilities.styleHollowButton(self.signOutButton)
 

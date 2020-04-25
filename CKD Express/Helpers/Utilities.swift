@@ -24,9 +24,10 @@ class Utilities {
         let firstName = patientData["firstName"] as! String
         let lastName = patientData["lastName"] as! String
         let ckdStage = patientData["ckdStage"] as! String
-        let checkupNeeded = patientData["checkupNeeded"] as! Bool
-        let nepthVisitNeeded = patientData["nephVisitNeeded"] as! Bool
+        let checkupNeeded = false
+        let nepthVisitNeeded = false
         let baseGFRScore = patientData["baseGFRScore"] as! Double
+        let dateOfBirth = patientData["dob"] as! Timestamp
         
         var gfrScores = Array<GFRScore>()
 
@@ -49,7 +50,7 @@ class Utilities {
         
         
         
-        let newPatient = Patient(firstName: firstName, lastName: lastName, ckdStage: ckdStage, gfrScores: gfrScores, checkupNeeded: checkupNeeded, nepthVisitNeeded: nepthVisitNeeded, baseGFRScore: baseGFRScore)
+        let newPatient = Patient(firstName: firstName, lastName: lastName, ckdStage: ckdStage, gfrScores: gfrScores, checkupNeeded: checkupNeeded, nepthVisitNeeded: nepthVisitNeeded, baseGFRScore: baseGFRScore, dob: dateOfBirth)
         
         return (newPatient)
         

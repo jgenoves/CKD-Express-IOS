@@ -16,6 +16,7 @@ public class Patient: User {
     var checkupNeeded: Bool
     var nephVisitNeeded: Bool
     var baseGFRScore: Double
+    var dob: Timestamp
     
     
     init(firstName pFirstName: String,
@@ -24,13 +25,15 @@ public class Patient: User {
          gfrScores pScores: Array<GFRScore>,
          checkupNeeded pCheckup: Bool,
          nepthVisitNeeded pNeph: Bool,
-         baseGFRScore bScore: Double){
+         baseGFRScore bScore: Double,
+         dob dateOfBirth: Timestamp){
         
         ckdStage = pckdStage
         gfrScores = pScores
         checkupNeeded = pCheckup
         nephVisitNeeded = pNeph
         baseGFRScore = bScore
+        dob = dateOfBirth
         
         super.init(firstName: pFirstName, lastName: pLastName)
     }

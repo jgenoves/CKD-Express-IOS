@@ -24,6 +24,7 @@
 		05A59A7624538FF90015D1B7 /* Logo_no_text_120px.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7324538FF80015D1B7 /* Logo_no_text_120px.png */; };
 		05A59A7724538FF90015D1B7 /* Logo_no_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7424538FF80015D1B7 /* Logo_no_text.png */; };
 		05A59A7824538FF90015D1B7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A59A7524538FF90015D1B7 /* Logo.png */; };
+		05A59A7A2453AFAF0015D1B7 /* ChangeCriteriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A59A792453AFAE0015D1B7 /* ChangeCriteriaViewController.swift */; };
 		05B6989F242A9F030099E0DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6989E242A9F030099E0DD /* Utilities.swift */; };
 		05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */; };
 		05B877952446334C00B87CF6 /* PatientNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */; };
@@ -78,6 +79,7 @@
 		05A59A7324538FF80015D1B7 /* Logo_no_text_120px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_no_text_120px.png; sourceTree = "<group>"; };
 		05A59A7424538FF80015D1B7 /* Logo_no_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_no_text.png; sourceTree = "<group>"; };
 		05A59A7524538FF90015D1B7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		05A59A792453AFAE0015D1B7 /* ChangeCriteriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCriteriaViewController.swift; sourceTree = "<group>"; };
 		05B6989E242A9F030099E0DD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05B8778F244628E400B87CF6 /* UIPatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPatientTabBarController.swift; sourceTree = "<group>"; };
 		05B877942446334C00B87CF6 /* PatientNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNotificationsViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				05B877A32447AADC00B87CF6 /* PatientSettingsViewController.swift */,
+				05A59A792453AFAE0015D1B7 /* ChangeCriteriaViewController.swift */,
 			);
 			path = PatientSettingsView;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				056DF62024030F63002703FE /* SceneDelegate.swift in Sources */,
 				05B877A42447AADC00B87CF6 /* PatientSettingsViewController.swift in Sources */,
 				05B6989F242A9F030099E0DD /* Utilities.swift in Sources */,
+				05A59A7A2453AFAF0015D1B7 /* ChangeCriteriaViewController.swift in Sources */,
 				05B8779924479D8500B87CF6 /* PreLoginViewController.swift in Sources */,
 				056DF651240C6F94002703FE /* Patient.swift in Sources */,
 				05B87790244628E400B87CF6 /* UIPatientTabBarController.swift in Sources */,
