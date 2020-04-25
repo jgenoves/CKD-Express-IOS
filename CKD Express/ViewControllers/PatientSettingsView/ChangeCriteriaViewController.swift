@@ -90,9 +90,6 @@ class ChangeCriteriaViewController : UIViewController {
                     let alertMessage = UIAlertController(title: "Email Change Success", message: "Success!", preferredStyle: .alert)
                            
                            let confirmAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
-                                print("Confirm button tapped")
-                                
-                                //pop view off stack
                                 
                            })
                            alertMessage.addAction(confirmAction)
@@ -129,7 +126,6 @@ class ChangeCriteriaViewController : UIViewController {
                                let confirmAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
                                     print("Confirm button tapped")
                                     
-                                    //pop view off stack
                                     
                                })
                                alertMessage.addAction(confirmAction)
